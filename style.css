@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fafafa;
-  font-size: 20px;
+  font-size: 18px;
 }
 #header-bar {
   background-color: #232323;
@@ -41,28 +41,27 @@ body {
 
 #about-us {
   display: flex;
+  justify-content: space-between;
   line-height: 30px;
   border-bottom: 1px solid #aaa;
   padding-bottom: 60px;
 }
 
 #about-left {
-  width: 50%;
-  padding: 0 20px 0 0;
+  width: 485px;
 }
 
 #about-right {
-  width: 50%;
-  padding: 0 0 0 20px;
+  width: 485px;
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 h4 {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 p {
@@ -119,9 +118,7 @@ p {
 #footer {
   background-color: #232d2f;
   color: #878888;
-  /* obraz w tle */
   background-image: url(zabek.jpg);
-  /* tryb powtarzania grafiki w tle */
   line-height: 50px;
   background-repeat: repeat-x;
   margin-top: 40px;
@@ -146,6 +143,12 @@ strong {
   color: #4f9ae0;
 }
 
+.resources-header {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
 .resources {
   width: 235px;
 }
@@ -157,9 +160,4 @@ li {
   line-height: 30px;
   margin: 0;
   padding: 0;
-}
-
-.resources-header {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 20px;
 }
