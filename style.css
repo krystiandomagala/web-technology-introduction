@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: #FAFAFA;
 }
 #header-bar {
     background-color: #232323;
@@ -16,10 +17,10 @@ body {
     /* zmiana sposobu pozycjonowania elementów */
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 40px;
+    align-items: flex-end;
+    padding: 40px 0 20px;
+    font-weight: 600;
     border-bottom: 1px solid #aaa;
-    align-items: baseline;
 }
 #header a {
     /* usunięcie podkreśleń */
@@ -29,45 +30,104 @@ body {
     color: #4f9ae0;
     padding: 0 15px;
 }
+
+#logo-section {
+    padding: 80px 0 30px;
+}
+
+#subtitle{
+    color: #4f9ae0;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
 #about-us {
     display: flex;
     font-size: 20px;
     /* wysokość wiersza tekstu */
     line-height: 30px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 60px;
 }
+
+#about-left{
+    width: 50%;
+    padding: 0 20px 0 0;
+}
+
+
+#about-right{
+    width: 50%;
+    padding: 0 0 0 20px;
+}
+
 /* selektor - każdy <p> wewnątrz <element id="about-left"> */
+
 #about-left p {
     /* wyśrodkowanie tekstu w <p> */
-    text-align: center;
 }
+
+h3 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h4 {
+    font-weight: 900;
+}
+
+p {
+    font-weight: 400;
+}
+
 #circles {
     display: flex;
     justify-content: center;
+    padding: 60px 0;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
 }
+
 #circle1 {
     background-color: #4f9ae0;
     width: 200px;
     height: 200px;
+    line-height: 200px;
     /* zaokrąglenie narożników */
     border-radius: 50%;
     /* przezroczystość elementu i jego zawartości */
     opacity: 0.7;
 }
 /* style po najechaniu myszą na element */
-#circle1:hover {
-    opacity: 0.85;
-}
+
 #circle2 {
     background-color: #4f9ae0;
     width: 200px;
     height: 200px;
+    line-height: 200px;
     border-radius: 50%;
     margin-left: -30px;
     opacity: 0.7;
 }
-#circle2:hover {
+
+#circle3 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    margin-left: -30px;
+    opacity: 0.7;
+}
+
+#circle1:hover, 
+#circle2:hover, 
+#circle3:hover {
     opacity: 0.85;
 }
+
 #footer {
     background-color: #232d2f;
     /* obraz w tle */
