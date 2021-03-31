@@ -70,6 +70,13 @@ p{
 
 a{
     text-decoration: none;
+    color: #819791;
+    border-bottom: 2px dotted;
+}
+
+a:hover{
+    color: #accac2;
+    border-bottom: 2px solid ;
 }
 
 .h2_styling{
