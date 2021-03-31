@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 32px;
+    text-align: justify;
+    background: url("/logos/tlo.png") center center;
+    background-size: cover;
+    color: white;
+    align-items: center;
+}
+
+main{
+    width: 460px;
+}
+
+header{
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #979ea5;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+}
+
+.gallery_container{
+    width: 460px;
+    padding: 5px 0;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery_container img{
+    margin: 5px 0;
+}
+
+article{
+    margin: 50px 0;
+}
+
+h2{
+    color: #cbd6df;
+    font-weight: 400;
+    text-align: center;
+    font-size: 32px;
+}
+
+p{
+    color: #819791;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+.h2_styling{
+    color: #819791;
+}
+
+.email_icon{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    margin: 50px 0;
+    font-size: 11px;
+    color: #444;
+    text-align: center;
+}
+/* 
+czcionka: arial
+kolor obramowania odnośnika #819791; 
+szerokość strony: 460px
+odstęp między zdjęciami w galerii: 10px;
+nagłówek (About Layer 51): #cbd6df, brak pogrubienia
+tekst podstawowy: 13px, wysokość wiersz 32px, wyrównanie: justify
+kolor obramowania odnośnika: #819791
+stopka: 11px, #444
+*/
+
