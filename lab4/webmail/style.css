@@ -19,6 +19,7 @@ body{
     text-align: right;
     margin: 0 10px;
     border: none;
+    cursor: pointer;
 }
 
 .menu_container:hover > .drop_down_menu{
