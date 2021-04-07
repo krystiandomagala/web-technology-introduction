@@ -1,50 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mail client</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="menu_container">
-            <div class="menu_bar">Menu</div>
+      <div class="menu_container">
+        <div class="menu_bar">Menu</div>
+        <nav class="drop_down_menu">
+          <div class="btn_container">
+            <button class="compose_btn">Compose</button>
+          </div>
 
-            <nav class="drop_down_menu">
-                <button class="compose_btn">Compose</button>
-                <ul>
-                    <li>
-                        Inbox 
-                        <span class="inbox_message_number">(2)</span>
-                    </li>
-                    <li>Important</li>
-                    <li>Sent</li>
-                    <li>Drafts</li>
-                    <li>Trash</li>
-                </ul>
-                <ul>
-                    <li>
-                        <h6>LABELS</h6>
-                    </li>
-                    <li>
-                        <div class="label_cube"></div>
-                        Private
-                    </li>
-                    <li>
-                        <div class="label_cube"></div>
-                        Job
-                    </li>
-                    <li>Flights</li>
-                </ul>
-            </nav>
+          <ul>
+            <li>
+              Inbox
+              <span class="inbox_message_number">&nbsp;(2)</span>
+            </li>
+            <li>Important</li>
+            <li>Sent</li>
+            <li>Drafts</li>
+            <li>Trash</li>
+          </ul>
+
+          <h6>LABELS</h6>
+
+          <ul>
+            <li>
+              <div class="label_cube private"></div>
+              Private
+            </li>
+            <li>
+              <div class="label_cube job"></div>
+              Job
+            </li>
+            <li>
+              <div class="label_cube flights"></div>
+              Flights
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mail_container">
+        <div class="mailbox_container">
+          <div class="mailbox_item">
+            <section class="avatar_img p5"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+
+          <div class="mailbox_item blue_border">
+            <section class="avatar_img p4"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+          <div class="mailbox_item blue_border">
+            <section class="avatar_img p3"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+
+          <div class="mailbox_item">
+            <section class="avatar_img p2"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+          <div class="mailbox_item">
+            <section class="avatar_img p1"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+          <div class="mailbox_item">
+            <section class="avatar_img p6"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
+          <div class="mailbox_item">
+            <section class="avatar_img p6"></section>
+            <section class="mail_content">
+              <h5 class="mail_author">May June</h5>
+              <h3 class="mail_title">New York New Yoork</h3>
+              <section class="mail_sneak">
+                Hey, confirm our meeting today, Fifth Avenue. Hmm?
+              </section>
+            </section>
+          </div>
         </div>
-        <div class="mail_container">
-            <div class="mailbox_container"></div>
-            <div class="message_container"></div>
+        <div class="message_container">
+          <section class="title_section">
+            <section class="title_section_left">
+              <h1 class="message_mail_title">Aliquam ac feugiat dolor</h1>
+              From <a href="">Eno Uqa</a> at
+              <span class="mail_sending_data"> 13:16pm, May 8, 2015</span>
+            </section>
+            <section class="title_section_right">
+                <button>Reply</button>
+                <button>Forward</button>
+                <button>Move to</button>
+            </section>
+          </section>
+          <section class="message_section">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              quo dolore quisquam debitis. Fugit, quisquam repellendus aut illum
+              praesentium velit sint sit id quibusdam optio quis! Hic porro
+              consectetur ea commodo consequat.Hic porro
+              consectetur ea commodo consequat.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                quo dolore quisquam debitis. Fugit, quisquam repellendus aut illum
+                praesentium velit sint sit id quibusdam optio quis! Hic porro
+                consectetur ea commodo consequat.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                quo dolore quisquam debitis. Fugit, quisquam repellendus aut illum
+                praesentium velit sint sit id quibusdam optio quis! Hic porro
+                consectetur ea commodo consequat.Fugit, quisquam repellendus aut illum
+                praesentium velit sint sit id quibusdam optio quis! Hic porro
+                consectetur ea commodo consequat.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                quo dolore quisquam debitis. Fugit, quisquam repellendus aut illum
+                praesentium velit sint sit id quibusdam optio quis! Hic porro
+                consectetur ea commodo consequat.
+              </p>
+              <p>
+                  Regards,<br>Tilo.
+              </p>
+          </section>
         </div>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
