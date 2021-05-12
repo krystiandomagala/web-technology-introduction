@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Sushi Lunch</title>
+</head>
+<body>
+    <!-- scale, przesuniecie, z-index w polowie animacji -->
+    <main>
+        <div class="card_container">
+            <div class="card">
+                <h2>Happy Sushi Lunch</h2>
+                <ul>
+                    <li>California Roll</li>
+                    <li>2 Piececs Salmon Nigiri</li>
+                    <li>Sea Salt Edamame</li>
+                    <li>Miso Soup</li>
+                </ul>
+                <div class="price__tag">$12</div>
+            </div>
+            
+            <div class="card item2 scaled">
+                <h2>Sushi Lover's Lunch</h2>
+                <ul>
+                    <li>Spicy Tuna Roll</li>
+                    <li>Shrimp Tempura Roll</li>
+                    <li>4 Pieces Asssorted Nigiri</li>
+                    <li>Wonton Soup</li>
+                </ul>
+                <div class="price__tag">$18</div>
+            </div>
+        </div>
+        <button class="switch__card__btn">Switch to Happy Sushi Lunch!</button>
+        <script>
+            document.querySelector("button").addEventListener("click",()=>{
+                let cards = document.querySelectorAll(".card");
+                cards[1].classList.toggle("item1");
+                cards[1].classList.toggle("item2");
+            })
+        </script>
+    </main>
+</body>
+</html>
