@@ -22,7 +22,7 @@
                 <div class="price__tag">$12</div>
             </div>
             
-            <div class="card item2 scaled">
+            <div class="card">
                 <h2>Sushi Lover's Lunch</h2>
                 <ul>
                     <li>Spicy Tuna Roll</li>
@@ -35,10 +35,27 @@
         </div>
         <button class="switch__card__btn">Switch to Happy Sushi Lunch!</button>
         <script>
+            let c = 0;
             document.querySelector("button").addEventListener("click",()=>{
                 let cards = document.querySelectorAll(".card");
-                cards[1].classList.toggle("item1");
-                cards[1].classList.toggle("item2");
+                if(c % 2 == 0)
+                {
+                    cards[0].classList.add("item4");
+                    cards[0].classList.remove("item3");
+
+                    cards[1].classList.add("item2");
+                    cards[1].classList.remove("item1");
+                }
+                else
+                {
+                    cards[0].classList.add("item3");
+                    cards[0].classList.remove("item4");
+
+                    cards[1].classList.add("item1");
+                    cards[1].classList.remove("item2");
+                }
+
+                c++;
             })
         </script>
     </main>

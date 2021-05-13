@@ -66,45 +66,76 @@ li{
     cursor: pointer;
 }
 
-.scaled{
-    transform: scale(1.2);
-}
+
 
 .item1{
-    animation: replace1 0.5s ease forwards;
+    animation: switchReverse 0.3s ease;
     animation-fill-mode: forwards;
-    animation-direction: reverse;
 }
 
 .item2{
-    animation: replace1 0.5s ease;
+    animation: switch 0.3s ease;
     animation-fill-mode: forwards;
-    transition: animation 0.5s;
 }
 
-@keyframes replace1 {
+.item3{
+    animation: switch2 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+.item4{
+    animation: switchReverse2 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes switch{
+    0% {}
+    50% {
+        transform: translateX(50px) scale(1.1);
+        z-index: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
+
+@keyframes switchReverse{
     0% {
         transform: scale(1.2);
     }
     50% {
         transform: translateX(50px) scale(1.1);
-        z-index: -99;
+        z-index: -1;
     }
     100% {
         transform: scale(1.0);
+        z-index: -1;
     }
 }
 
-@keyframes replace2 {
+@keyframes switch2{
+    0% {}
+    50% {
+        transform: translateX(-50px) scale(1.1);
+        z-index: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
+
+@keyframes switchReverse2{
     0% {
         transform: scale(1.2);
     }
     50% {
         transform: translateX(-50px) scale(1.1);
-        z-index: -99;
+        z-index: -1;
     }
-    
     100% {
         transform: scale(1.0);
+        z-index: -1;
     }
 }
