@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    perspective:  100vw;
+    overflow: hidden;
+}
+
+.lay_down_nav{
+    transform: translateY(-320px);
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+
+.fall_down{
+    transition: transform 0.3s;
+    transform: translateY(0px);
+}
+
+.lay_down_nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lay_down_nav li {
+    margin: 10px;
+}
+
+.side_nav{
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(97, 172, 128);
+    transform: translateX(-400px);
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(235, 235, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.perspective{
+    transform: rotateY(-20deg) scale(0.7) translateX(200px);
+    transition: transform 0.3s;
+    filter: brightness(80%);
+}
+
+.lay_down{
+    transform: rotateX(75deg) scale(0.7);
+    transition: transform 0.3s;
+    filter: brightness(80%);
+}
+
+.header_handler{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+
+h1{
+    font-size: 42px;
+    color: rgb(97, 172, 128);
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+h2{
+    font-size: 26px;
+    color: rgb(173, 173, 155);
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+button{
+    background-color: rgb(97, 172, 128);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(76, 134, 101);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+     padding: 10px ;
+     border-bottom: rgb(76, 134, 101) 2px solid;
+}
+
+.move_left{
+    transition: transform 0.3s;
+    transform: translateX(0px);
+}
+
+nav h2, nav ul{
+    color: rgb(250, 250, 249);
+}
+
+nav h2 {
+    text-align: center;
+}

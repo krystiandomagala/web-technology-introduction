@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar Transitions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="lay_down_nav">
+        <ul>
+            <li>DATA MANAGEMENT</li>
+            <li>LOCATION</li>
+            <li>STUDY</li>
+            <li>COLLECTIONS</li>
+            <li>CREDITS</li>
+        </ul>
+    </nav>
+
+    <nav class="side_nav">
+        <h2>MENU</h2>
+        <ul>
+            <li>DATA MANAGEMENT</li>
+            <li>LOCATION</li>
+            <li>STUDY</li>
+            <li>COLLECTIONS</li>
+            <li>CREDITS</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="header_handler">
+            <h1>Sidebar Transitions</h1>
+            <h2>Transition effects for off-canvas views</h2>
+            <button class="scaleBtn">SCALE & ROTATE PUSHER</button>
+            <button class="layDownBtn">LAY DOWN</button>
+        </div>
+    </main>
+
+    <script>
+
+        let scaleBtn = document.querySelector(".scaleBtn");
+        let layDownBtn = document.querySelector(".layDownBtn");
+        const navContainer = document.querySelector(".side_nav");
+        const navContainer2 = document.querySelector(".lay_down_nav");
+        const mainContainer = document.querySelector("main");
+
+        scaleBtn.addEventListener("click", ()=>{
+          navContainer.classList.toggle("move_left");
+          mainContainer.classList.toggle("perspective");
+        });
+
+        layDownBtn.addEventListener("click", ()=>{
+            mainContainer.classList.toggle("lay_down");
+            navContainer2.classList.toggle("fall_down");
+        });
+
+
+    </script>
+</body>
+</html>
+
+<!-- zawartość transformowana tez transform-style: preserve-3d; 
+wartość perspective do elementu nadrzednego wrzucic
+
+-->
