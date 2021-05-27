@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -344,9 +345,11 @@ blockquote{
 .fluid-container iframe{
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 100%;
     position: absolute;
+    border: 5px solid #fff;
+    border-radius: 3px;
 }
 
 .fluid-width-video-wrapper{
@@ -450,6 +453,15 @@ footer {
   nav {
     grid-area: nav;
   }
+
+  .regular-btn, .small-btn, .extra-small-btn{
+    width: auto;
+  }
+
+  input[type="text"],input[type="password"]{
+      width: 65%;
+      margin-right: 20%;
+  }
 }
 
 @media screen and (min-width: 838px) {
@@ -463,11 +475,15 @@ footer {
     display: none;
   }
 
-  ul {
+  .regular-btn, .small-btn, .extra-small-btn{
+    width: auto;
+  }
+
+  nav ul {
     display: flex;
   }
 
-  li {
+  nav li {
     margin: 0 5px;
   }
 
@@ -483,17 +499,22 @@ footer {
   .lower-container {
     display: grid;
     grid-template-columns: 65% 24%;
-    grid-template-rows: repeat(11, auto);
+    grid-template-rows: repeat(16, auto);
     grid-template-areas:
       "headers aside"
       "rules-container aside"
       "buttons-container ."
+      "h1 ."
       "images-container ."
+      "h2 ."
       "table-container ."
       "form-container ."
       "columns-container ."
+      "h3 ."
       "iframe-container ."
+      "h4 ."
       "block-quotes-container ."
+      "h5 ."
       "fluid-container ."
       "footer footer";
   }
@@ -501,7 +522,9 @@ footer {
   aside {
     grid-area: aside;
     border-left: 1px solid #cad2d7;
-    padding-left: 4%;
+    padding-left: 4vw;
+    width: 100%;
+    margin-left: 7vw;
   }
 
   .headers-container {
@@ -534,20 +557,20 @@ footer {
   .fluid-container {
     grid-area: fluid-container;
   }
-  hr:nth-child(4) {
-    grid-area: hr;
+  .h1 {
+    grid-area: hr1;
   }
-  hr:nth-child(5) {
-    grid-area: hr;
+  .h2 {
+    grid-area: hr2;
   }
-  hr:nth-child(6) {
-    grid-area: hr;
+  .h3 {
+    grid-area: hr3;
   }
-  hr:nth-child(7) {
-    grid-area: hr;
+  .h4 {
+    grid-area: hr4;
   }
-  hr:nth-child(8) {
-    grid-area: hr;
+  .h5 {
+    grid-area: hr5;
   }
 
   footer {
@@ -581,4 +604,56 @@ footer {
     justify-self: center;
     max-width: 1140px;
   }
+
+  .images-wrapper{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 img1"
+    "img2 img2 img2 img2 img2 . img3 img3 img3 img3 img3"
+    "img4 img4 img4 . img5 img5 img5 . img6 img6 img6";
+}
+
+.images-wrapper img:nth-child(1){grid-area: img1;}
+.images-wrapper img:nth-child(2){grid-area: img2;}
+.images-wrapper img:nth-child(3){grid-area: img3;}
+.images-wrapper img:nth-child(4){grid-area: img4;}
+.images-wrapper img:nth-child(5){grid-area: img5;}
+.images-wrapper img:nth-child(6){grid-area: img6;}
+
+input[type="text"], input[type="password"]{
+    width: 68%;
+    margin-right: 28%;
+}
+
+.columns-container{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    "c1  c1  c1  c1  c1  .   c2  c2  c2  c2  c2"
+    "c3  c3  c3  .   c4  c4  c4  .   c5  c5  c5"
+    "c6  c6  .   c7  c7  .   c8  c8  .   c9  c9"
+    "c10 c10 .   c11 c11 .   c12 c12 c12 c12 c12"
+    "c13 c13 .   c14 c14 c14 c14 c14 c14 c14 c14"
+    "c15 c15 c15 c15 c15 c15 c15 .   c16 c16 c16";
+}
+
+.columns-container .column-item:nth-child(1) {grid-area: c1;}
+.columns-container .column-item:nth-child(2) {grid-area: c2;}
+.columns-container .column-item:nth-child(3) {grid-area: c3;}
+.columns-container .column-item:nth-child(4) {grid-area: c4;}
+.columns-container .column-item:nth-child(5) {grid-area: c5;}
+.columns-container .column-item:nth-child(6) {grid-area: c6;}
+.columns-container .column-item:nth-child(7) {grid-area: c7;}
+.columns-container .column-item:nth-child(8) {grid-area: c8;}
+.columns-container .column-item:nth-child(9) {grid-area: c9;}
+.columns-container .column-item:nth-child(10) {grid-area: c10;}
+.columns-container .column-item:nth-child(11) {grid-area: c11;}
+.columns-container .column-item:nth-child(12) {grid-area: c12;}
+.columns-container .column-item:nth-child(13) {grid-area: c13;}
+.columns-container .column-item:nth-child(14) {grid-area: c14;}
+.columns-container .column-item:nth-child(15) {grid-area: c15;}
+.columns-container .column-item:nth-child(16) {grid-area: c16;}
 }
