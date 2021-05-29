@@ -69,14 +69,14 @@ li {
   border-radius: 3px;
 }
 
-li a {
+nav li a {
   font-family: "Roboto Condensed";
   font-size: 24px;
   font-weight: bold;
   color: inherit;
 }
 
-li:hover,
+nav li:hover,
 .menu-btn:hover {
   background-color: #646d72;
   color: #fff;
@@ -236,14 +236,6 @@ hr,
   width: 100%;
   margin: 0.5em 0;
   font-weight: bold;
-  transition: background-color 250ms ease-in-out;
-
-}
-
-.regular-btn:hover,
-.small-btn:hover,
-.extra-small-btn:hover {
-  background-color: #2d3438;
 }
 
 table {
@@ -307,16 +299,13 @@ input, textarea{
     outline: none;
     margin-bottom: 1em;
     resize: none;
+    font-family: 'Roboto';
 }
 
 select{
     margin: 0 6px 1em 0;
     color: #656a6f;
     font-size: 16px;
-}
-
-textarea{
-    height: 130px;
 }
 
 select, input[type=radio], input[type=checkbox] {
@@ -468,7 +457,7 @@ footer {
     width: auto;
   }
 
-  input[type="text"],input[type="password"]{
+  input[type="text"],input[type="email"]{
       width: 65%;
       margin-right: 20%;
   }
@@ -485,8 +474,17 @@ footer {
     display: none;
   }
 
+  .phone-divider{
+    display: none;
+  }
+
   .regular-btn, .small-btn, .extra-small-btn{
     width: auto;
+  }
+
+  input[type="text"],input[type="email"]{
+    width: 65%;
+    margin-right: 20%;
   }
 
   nav ul {
@@ -508,33 +506,24 @@ footer {
 
   .lower-container {
     display: grid;
-    grid-template-columns: 65% 24%;
-    grid-template-rows: repeat(16, auto);
+    grid-gap: 50px;
+    grid-template-columns: 67% 1fr;
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "headers aside"
-      "rules-container aside"
-      "buttons-container ."
-      "hr1 ."
-      "images-container ."
-      "hr2 ."
-      "table-container ."
-      "form-container ."
-      "columns-container ."
-      "hr3 ."
-      "iframe-container ."
-      "hr4 ."
-      "block-quotes-container ."
-      "hr5 ."
-      "fluid-container ."
-      "footer footer";
+      "contact-container  aside"
+      "contact-container  aside"
+      "footer footer ";
+  }
+
+  .contact-container{
+    grid-area: contact-container;
   }
 
   aside {
     grid-area: aside;
     border-left: 1px solid #cad2d7;
-    padding-left: 30px;
-    width: 100%;
-    margin-left: 34%;
+    padding-left: 50px;
+    width: calc(100% - 50px);
   }
 
   .headers-container {
@@ -632,7 +621,7 @@ footer {
 .images-wrapper img:nth-child(5){grid-area: img5;}
 .images-wrapper img:nth-child(6){grid-area: img6;}
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="email"]{
     width: 68%;
     margin-right: 28%;
 }

@@ -161,6 +161,7 @@ h1::after{
     color: #2d3438;
     font-family: "Roboto";
     font-weight: bold;
+    transition: all 250ms ease-in-out;
 }
 
 .more::before{

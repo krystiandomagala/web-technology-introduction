@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/gallery.css" />
+
+    <title>Selfy</title>
+  </head>
+  <body>
+    <div class="upper-container">
+      <header>
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo@2x.png" alt="Selfy" class="logo-image" />
+        </a>
+
+        <button class="menu-btn">Menu</button>
+
+        <nav class="display-toggle">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="styles.html">Styles</a></li>
+            <li class="active-page"><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="lower-container">
+
+      <div class="gallery-style-description">
+        <h2>Gallery Style One</h2>
+        <p class="italic">
+          Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+        </p>
+        <p>
+          Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper
+          nulla non metus auctor fringilla. Donec idi portaida at eget metus.
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta
+          gravida at eget metus. Donec ullamcorper nulla non metus
+          auctor&nbsp;fringilla.
+        </p>
+      <a href="styles.html" class="more">See Full Theme Styles</a>
+      </div>
+
+
+      <img src="assets/img/mock.jpg"  class="gallery-item" alt="" />
+      <img src="assets/img/mock2.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock3.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock4.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock5.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock6.jpg" class="gallery-item" alt="" />
+
+      <hr class="h1" />
+
+      <div class="gallery-style-description">
+        <h2>Gallery Style Two</h2>
+        <p class="italic">
+          Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+        </p>
+        <p>
+          Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper
+          nulla non metus auctor fringilla. Donec idi portaida at eget metus.
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta
+          gravida at eget metus. Donec ullamcorper nulla non metus
+          auctor&nbsp;fringilla.
+        </p>
+      </div>
+
+      <img src="assets/img/mock7.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock3.jpg" class="gallery-item" alt="" />
+
+      <hr class="h2" />
+
+      <div class="gallery-style-description">
+        <h2>Gallery Style Three</h2>
+        <p class="italic">
+          Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+        </p>
+        <p>
+          Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper
+          nulla non metus auctor fringilla. Donec idi portaida at eget metus.
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta
+          gravida at eget metus. Donec ullamcorper nulla non metus
+          auctor&nbsp;fringilla.
+        </p>
+      </div>
+
+      <img src="assets/img/mock2.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock6.jpg" class="gallery-item" alt="" />
+
+      <footer>
+        <div class="icon-container">
+          <a href="#" class="social-link">
+            <img src="assets/img/icon-facebook@2x.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="assets/img/icon-twitter@2x.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="assets/img/icon-linkedin@2x.png" alt="LinkedIn" />
+          </a>
+        </div>
+
+        <div class="copyright-container">
+          <a href="index.html" class="logo-foot">
+            <img src="assets/img/logo-foot@2x.png" alt="logo" />
+          </a>
+          &copy; Copyright Selfy 2013
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      menuBtn.addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("display-toggle");
+      });
+
+    </script>
+  </body>
+</html>
