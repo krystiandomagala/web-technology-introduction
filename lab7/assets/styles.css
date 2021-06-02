@@ -17,6 +17,15 @@ header {
   flex-wrap: wrap;
 }
 
+.lightbox-item{
+  transition: opacity 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.lightbox-item:hover{
+  opacity: 0.7;
+}
+
 .logo-image {
   height: 52px;
   width: 131px;
@@ -445,6 +454,37 @@ footer {
   font-family: "Roboto";
   font-size: 14px;
 }
+
+.lightbox-container{
+  display: none;
+}
+
+.lightbox-img{
+    width: 70%;
+}
+
+.lightbox-active{
+  display: flex;
+  background-color: rgba(1,1,1,0.8);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.inactive-lightbox{
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 42px;  
+  right: 15%;
+}
+
 
 @media screen and (min-width: 575.98px) and (max-width: 838px) {
   header {

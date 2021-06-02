@@ -113,11 +113,11 @@
         </p>
         <div class="images-wrapper">
           <img src="assets/img/mock-small.jpg" class="gallery-item" alt="" />
-          <img src="assets/img/mock.jpg" class="gallery-item" alt="" />
-          <img src="assets/img/mock3.jpg" class="gallery-item" alt="" />
-          <img src="assets/img/mock4.jpg" class="gallery-item" alt="" />
-          <img src="assets/img/mock5.jpg" class="gallery-item" alt="" />
-          <img src="assets/img/mock6.jpg" class="gallery-item" alt="" />
+          <img src="assets/img/mock.jpg" class="gallery-item lightbox-item" alt="" />
+          <img src="assets/img/mock3.jpg" class="gallery-item lightbox-item" alt="" />
+          <img src="assets/img/mock4.jpg" class="gallery-item lightbox-item" alt="" />
+          <img src="assets/img/mock5.jpg" class="gallery-item lightbox-item" alt="" />
+          <img src="assets/img/mock6.jpg" class="gallery-item lightbox-item" alt="" />
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -544,7 +544,7 @@
           class="fancybox"
           title="Insert Your Title"
           >
-          <img src="assets/img/mock2.jpg" class="gallery-item" alt=""/>
+          <img src="assets/img/mock2.jpg" class="gallery-item lightbox-item" alt=""/>
         </a>
       </aside>
 
@@ -583,6 +583,12 @@
           &copy; Copyright Selfy 2013
         </div>
       </footer>
+
+      <div class="lightbox-container">
+        <img src="" alt="" class="lightbox-img">
+        <button class="inactive-lightbox">X</button>
+
+      </div>
     </div>
 
     <script>
@@ -591,5 +597,6 @@
         document.querySelector("nav").classList.toggle("display-toggle");
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
