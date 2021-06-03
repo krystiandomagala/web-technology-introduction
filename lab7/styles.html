@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/lightbox.css">
     <title>Selfy</title>
   </head>
   <body>
@@ -583,14 +584,18 @@
           &copy; Copyright Selfy 2013
         </div>
       </footer>
-
-      <div class="lightbox-container">
-        <img src="" alt="" class="lightbox-img">
-        <button class="inactive-lightbox">X</button>
-
-      </div>
     </div>
+    <div class="lightbox-container">
+      <div class="lightbox-element">
+        <button class="backwards-button"><</button>
 
+        <img src="" alt="" class="lightbox-img">
+        <button class="forwards-button">></button>
+
+        <button class="inactive-lightbox">X</button>
+      </div>
+
+    </div>
     <script>
       let menuBtn = document.querySelector(".menu-btn");
       menuBtn.addEventListener("click", () => {

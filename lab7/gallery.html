@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/gallery.css" />
+    <link rel="stylesheet" href="assets/lightbox.css" />
 
     <title>Selfy</title>
   </head>
@@ -64,12 +65,12 @@
       </div>
 
 
-      <img src="assets/img/mock.jpg"  class="gallery-item" alt="" />
-      <img src="assets/img/mock2.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock3.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock4.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock5.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock6.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock.jpg"  class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock2.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock3.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock4.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock5.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock6.jpg" class="gallery-item lightbox-item" alt="" />
 
       <hr class="h1" />
 
@@ -88,9 +89,9 @@
         </p>
       </div>
 
-      <img src="assets/img/mock7.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock3.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock7.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock3.jpg" class="gallery-item lightbox-item" alt="" />
 
       <hr class="h2" />
 
@@ -109,8 +110,8 @@
         </p>
       </div>
 
-      <img src="assets/img/mock2.jpg" class="gallery-item" alt="" />
-      <img src="assets/img/mock6.jpg" class="gallery-item" alt="" />
+      <img src="assets/img/mock2.jpg" class="gallery-item lightbox-item" alt="" />
+      <img src="assets/img/mock6.jpg" class="gallery-item lightbox-item" alt="" />
 
       <footer>
         <div class="icon-container">
@@ -134,6 +135,18 @@
       </footer>
     </div>
 
+    <div class="lightbox-container">
+      <div class="lightbox-element">
+        <button class="backwards-button"><</button>
+
+        <img src="" alt="" class="lightbox-img">
+        <button class="forwards-button">></button>
+
+        <button class="inactive-lightbox">X</button>
+      </div>
+
+    </div>
+
     <script>
       let menuBtn = document.querySelector(".menu-btn");
       menuBtn.addEventListener("click", () => {
@@ -141,5 +154,6 @@
       });
 
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
