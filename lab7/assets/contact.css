@@ -435,6 +435,26 @@ footer {
   font-size: 14px;
 }
 
+.icon{
+  transition: all 250ms ease-in-out;
+}
+
+.icon:hover{
+    filter:brightness(0);
+}
+
+.logo-foot img{
+  transition: all 250ms ease-in-out;
+}
+
+.logo-foot img:hover{
+    filter: brightness(120%);
+}
+
+.regular-btn:hover{
+  background-color: #2d3438;
+}
+
 @media screen and (min-width: 575.98px) and (max-width: 838px) {
   header {
     display: grid;

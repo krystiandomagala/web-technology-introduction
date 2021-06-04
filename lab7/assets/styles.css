@@ -448,6 +448,21 @@ footer {
   font-size: 14px;
 }
 
+.icon{
+  transition: all 250ms ease-in-out;
+}
+
+.icon:hover{
+    filter:brightness(0);
+}
+
+.logo-foot img{
+  transition: all 250ms ease-in-out;
+}
+
+.logo-foot img:hover{
+    filter: brightness(120%);
+}
 
 
 

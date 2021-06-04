@@ -169,6 +169,22 @@ h1::after{
     color:#ffc000;
 }
 
+.icon{
+    transition: all 250ms ease-in-out;
+  }
+  
+  .icon:hover{
+      filter:brightness(0);
+  }
+  
+  .logo-foot img{
+    transition: all 250ms ease-in-out;
+  }
+  
+  .logo-foot img:hover{
+      filter: brightness(120%);
+  }
+
 footer{
     border-top: 1px solid #cad2d7;
     padding: 50px 0  50px;

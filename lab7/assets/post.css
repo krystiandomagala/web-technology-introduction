@@ -236,7 +236,10 @@ hr,
   width: 100%;
   margin: 0.5em 0;
   font-weight: bold;
+  transition: background-color 250ms ease-in-out;
 }
+
+
 
 table {
   font-family: "Roboto";
@@ -435,6 +438,23 @@ footer {
   font-size: 14px;
 }
 
+
+.icon{
+  transition: all 250ms ease-in-out;
+}
+
+.icon:hover{
+    filter:brightness(0);
+}
+
+.logo-foot img{
+  transition: all 250ms ease-in-out;
+}
+
+.logo-foot img:hover{
+    filter: brightness(120%);
+}
+
 @media screen and (min-width: 575.98px) and (max-width: 838px) {
   header {
     display: grid;
@@ -490,10 +510,6 @@ footer {
   .paragraph-quote-wrapper p:nth-child(1){grid-area: p1;}
 
   blockquote{grid-area: blockquote}
-
-  .regular-btn, .small-btn, .extra-small-btn{
-    width: auto;
-  }
 
   input[type="text"],input[type="email"]{
     width: 65%;
