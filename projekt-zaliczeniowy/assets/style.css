@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading-section {
+  margin-top: 60px;
+}
+
+.hamburger-menu {
+  transition: filter 250ms ease-in-out;
+}
+
+.hamburger-menu:hover {
+  filter: brightness(0.4);
+}
+
+.go-up-btn {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
+.go-up-btn img {
+  height: 50px;
+}
+
+.go-up-btn img:hover {
+  filter: brightness(2);
+}
+
+.invisible-menu {
+  display: none;
+}
+
+nav {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  background-color: #0a0a0a;
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: #1d1d1d 1px solid;
+  transition: background-color 250ms ease-in-out, padding-left 250ms ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: #1d1d1d;
+  padding-left: 20px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+img {
+  width: 70vw;
+  cursor: pointer;
+}
+
+#how-to-start-section ul .heading-item {
+  transition: color 150ms ease-in-out, margin-left 150ms ease-in-out;
+}
+
+#how-to-start-section ul .heading-item:hover {
+  color: #ca4747;
+  margin-left: 20px;
+}
+
+.heading-item a {
+  color: inherit;
+}
+
+#welcome-section {
+  background: url("/assets/img/photos/fish-background.png") no-repeat;
+  background-size: 70vw;
+  background-position: right bottom;
+}
+
+hr {
+  border: 0;
+  border-top: 4px solid #9b3231;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ca4747;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.section-logo {
+  width: 30px;
+  height: 30px;
+  border: #fff solid 4px;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#history-section,
+#definition-section,
+#how-to-start-section,
+#tank-section,
+#light-section,
+#filtration-section,
+#fertilizing-section,
+#arrangement-section,
+#animals-section {
+  margin: 50px 0;
+  padding: 10px 0;
+}
+
+.bordered-img {
+  box-shadow: -10px 10px 0 0 #ca4747;
+  margin: 20px 0 20px 10px;
+  width: calc(100% - 10px);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 190%;
+}
+
+img {
+  margin: 20px 0;
+  width: 100%;
+}
+
+ul {
+  list-style-position: inside;
+  margin: 40px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.heading-item {
+  list-style-image: url("/assets/img/icons/arrow.svg");
+  font-weight: bold;
+  height: 28px;
+  line-height: 20px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fertilizers {
+  width: 150px;
+  position: absolute;
+  left: 10%;
+  margin-top: 15%;
+}
+
+blockquote {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+i {
+  color: #cdcdcd;
+}
+
+.animal-info p {
+  margin-top: 20px;
+}
+
+.animal-info {
+  margin-top: 30px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon:nth-child(2) {
+  height: 32px;
+  width: 35px;
+  margin: 0 3px 24px 0;
+}
+
+.contact-section h5 {
+  margin: 10px 0;
+  color: white;
+}
+
+.contact-section {
+  color: #909090;
+}
+
+.footer-logo {
+  width: 30%;
+  margin: 0;
+}
+
+.logo-copyright-section {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+iframe {
+  margin: 20px 0;
+  height: 250px;
+}
+
+.start-btn:hover {
+  background-color: #909090;
+}
+
+.gallery {
+  display: none;
+}
+
+.gallery-item {
+  transition: filter 150ms ease-in-out;
+}
+
+.gallery-item:hover {
+  filter: contrast(70%);
+}
+
+.gallery-active {
+  background-color: rgba(1, 1, 1, 0.5);
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+}
+
+.gallery-wrapper {
+  max-width: 80%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.hide-btn,
+.forwards,
+.backwards {
+  text-align: center;
+  width: 40px;
+  width: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  #welcome-section {
+    background: url("/assets/img/photos/fish-background.png") no-repeat;
+    background-size: 40vw auto;
+    background-position: right bottom;
+  }
+
+  .fertilizers {
+    width: 150px;
+    position: absolute;
+    left: 10%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+
+  h2{
+      font-size: 40px;
+  }
+
+  h3{
+      font-size: 28px;
+  }
+
+  h4{
+      font-size: 24px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  i{
+      font-size: 20px;
+  }
+
+  .amano1,
+  .amano2,
+  .glass {
+    width: 60vw;
+  }
+
+  .fertilizers {
+    width: 150px;
+    position: absolute;
+    left: 10%;
+    margin-top: 25%;
+  }
+
+  iframe{
+      height: 400px;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+    .fertilizers {
+        width: 180px;
+        position: absolute;
+        left: 10%;
+        margin-top: 25%;
+      }
+
+    
+
+}
