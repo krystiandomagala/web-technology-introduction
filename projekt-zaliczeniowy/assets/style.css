@@ -325,7 +325,6 @@ iframe {
 
 @media screen and (min-width: 576px) {
   #welcome-section {
-    background: url("/assets/img/photos/fish-background.png") no-repeat;
     background-size: 40vw auto;
     background-position: right bottom;
   }
@@ -339,34 +338,36 @@ iframe {
 }
 
 @media screen and (min-width: 768px) {
+
+
   p {
     font-size: 20px;
   }
 
-  h2{
-      font-size: 40px;
+  h2 {
+    font-size: 40px;
   }
 
-  h3{
-      font-size: 28px;
+  h3 {
+    font-size: 28px;
   }
 
-  h4{
-      font-size: 24px;
+  h4 {
+    font-size: 24px;
   }
 
   h5 {
     font-size: 24px;
   }
 
-  i{
-      font-size: 20px;
+  i {
+    font-size: 20px;
   }
 
   .amano1,
   .amano2,
   .glass {
-    width: 60vw;
+    width: 60%;
   }
 
   .fertilizers {
@@ -376,20 +377,36 @@ iframe {
     margin-top: 25%;
   }
 
-  iframe{
-      height: 400px;
+  iframe {
+    height: 400px;
   }
-  
 }
 
 @media screen and (min-width: 992px) {
-    .fertilizers {
-        width: 180px;
-        position: absolute;
-        left: 10%;
-        margin-top: 25%;
-      }
+  #welcome-section {
+    background-size: 40vw auto;
+    background-position: right;
+  }
 
-    
+  .heading-section hr {
+    width: 60%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    max-width: 1024px;
+  }
 
+  p {
+    width: 80%;
+  }
+
+  .fertilizers {
+    width: 180px;
+    position: absolute;
+    left: 10%;
+    margin-top: 25%;
+  }
 }
