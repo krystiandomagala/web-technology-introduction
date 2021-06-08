@@ -25,7 +25,7 @@ header {
 
 .heading-section {
   padding: 120px 0;
-  background: url("/assets/img/photos/fish-background.png") no-repeat;
+  background: url("assets/img/photos/fish-background.png") no-repeat;
   background-size: contain;
   background-position: right bottom;
 }
