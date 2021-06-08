@@ -199,7 +199,7 @@ li {
 }
 
 .heading-item {
-  list-style-image: url("/assets/img/icons/arrow.svg");
+  list-style-image: url("img/icons/arrow.svg");
   font-weight: bold;
   height: 28px;
   line-height: 20px;
