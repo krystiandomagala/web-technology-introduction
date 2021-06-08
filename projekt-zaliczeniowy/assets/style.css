@@ -83,6 +83,11 @@ nav ul li:hover {
   padding-left: 20px;
 }
 
+nav ul li a{
+  width: 100%;
+  display: inline-block;
+}
+
 header img {
   height: 50px;
   width: auto;
