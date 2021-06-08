@@ -1,465 +1,763 @@
 <!DOCTYPE html>
-<html lang=pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="akwarium, poradnik, akwarystyka">
-    <meta name="description" content="Przewodnik stanowiący podstawę w zrozumieniu i prowadzeniu akwarystyki naturalnej.">
-    <link rel="icon" type="image/png" href="/assets/img/icons/rect-group.svg">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="akwarium, poradnik, akwarystyka" />
+    <meta
+      name="description"
+      content="Przewodnik stanowiący podstawę w zrozumieniu i prowadzeniu akwarystyki naturalnej."
+    />
+    <link rel="icon" type="image/png" href="/assets/img/icons/rect-group.svg" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Tank Guide</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="welcome-section">
-            <header>
-                <a href="#"><img src="/assets/img/icons/main-logo.svg" alt="Tank Guide Logo"></a>
-                <img src="/assets/img/icons/hamburger-menu.svg" alt="Menu" class="hamburger-menu">
-                <nav class="invisible-menu">
-                    <ul>
-                        <li><a href="#history-section">Wprowadzenie</a></li>
-                        <li><a href="#tank-section">Zbiornik</a></li>
-                        <li><a href="#light-section">Oświetlenie</a></li>
-                        <li><a href="#filtration-section">Filtracja</a></li>
-                        <li><a href="#fertilizing-section">Nawożenie</a></li>
-                        <li><a href="#arrangement-section">Aranżacja</a></li>
-                        <li><a href="#animals-section">Obsada</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <div class="heading-section">
-                <h1>Natura w <br>zasięgu ręki</h1>
-                <hr>
-                <h4>Krótki przewodnik po akwarystyce naturalnej dla początkujących</h4>
-                <a class="start-btn" href="#how-to-start-section">Zaczynajmy</a>
-            </div>
-        </div>
-
-        <div id="history-section">
-            <div class="section-logo">i</div>
-            <h2>Krótka historia akwarystyki naturalnej</h2>
-            <hr>
-            <p>
-                Za prekursora i twórcę akwarystyki naturalnej uważany jest japoński projektant i fotograf <strong>Takashi Amano</strong>. 
-                Znacząco przyczynił się do ukształtowania pojęcia akwarium naturalnego. Amano wraz ze swoją firmą 
-                <strong>Aqua Design Amano</strong> (w skrócie ADA) rozprowadzał własne produkty akwarystyczne, w tym specjalne akcesoria do 
-                sadzenia roślin i formowania podwodnych krajobrazów Dzięki niemu japońska sztuka ogrodnicza znalazła 
-                zastosowanie jako element wzornictwa w aranżacji akwariów i sposobach sadzenia w nich roślin.
-            </p>
-
-            <img src="/assets/img/photos/amano-1.jpg" alt="Takashi Amano" class="bordered-img gallery-item amano1">
-            <img src="/assets/img/photos/amano-2.jpg" alt="Dom Takashiego Amano" class="bordered-img gallery-item amano2">
-        </div>
-
-        <div id="definition-section">
-            <div class="section-logo">?</div>
-            <h2>Czym jest akwarystyka naturalna?</h2>
-            <hr>
-            <p>
-                Jest to rodzaj akwarystyki, który polega na odtworzeniu zaczerpniętych z natury krajobrazów za
-                pomocą naturalnych materiałów takich jak korzenie oraz kamienie, które połączone z roślinami oraz 
-                tropikalnymi rybami tworzą harmonię podwodnego świata. Dzięki tak stworzonej aranżacji akwarium 
-                staje się relaksującym zakątkiem naszego pomieszczenia.
-            </p>
-            <img src="/assets/img/photos/history_section.jpg" alt="Akwarium" class="gallery-item">
-        </div>
-
-        <div id="how-to-start-section">
-            <div class="section-logo">0</div>
-            <h2>Od czego zacząć?</h2>
-            <hr>
-            <p>
-                Jest wiele sposobów na stworzenie pięknego akwarium. Chcielibyśmy zaproponować Wam wydeptaną 
-                przez nas ścieżkę, która doprowadzi was do celu, jakim jest piękne akwarium w stylu naturalnym. Będzie to 
-                pokazanie pewnego procesu, który pomoże Wam uniknąć różnych błędów, zdobycie wiedzy i umiejętności 
-                pozwalających założyć i pielęgnować własne akwarium naturalne.
-                Założenie akwarium naturalnego wiąże się z wieloma zagadnieniami <strong>takimi, jak:</strong>
-            </p>
+      <div id="welcome-section" class="fade-in">
+        <header>
+          <a href="#"
+            ><img src="/assets/img/icons/main-logo.svg" alt="Tank Guide Logo"
+          /></a>
+          <img
+            src="/assets/img/icons/hamburger-menu.svg"
+            alt="Menu"
+            class="hamburger-menu"
+          />
+          <nav class="invisible-menu">
             <ul>
-                <li class="heading-item"><a href="#tank-section">Wybór zbiornika</a></li>
-                <li class="heading-item"><a href="#light-section">Oświetlenie</a></li>
-                <li class="heading-item"><a href="#filtration-section">Filtracja</a></li>
-                <li class="heading-item"><a href="#fertilizing-section">Nawożenie</a></li>
-                <li class="heading-item"><a href="#arrangement-section">Aranżacja</a></li>
-                <li class="heading-item"><a href="#animals-section">Obsada</a></li>
+              <li><a href="#history-section">Wprowadzenie</a></li>
+              <li><a href="#tank-section">Zbiornik</a></li>
+              <li><a href="#light-section">Oświetlenie</a></li>
+              <li><a href="#filtration-section">Filtracja</a></li>
+              <li><a href="#fertilizing-section">Nawożenie</a></li>
+              <li><a href="#arrangement-section">Aranżacja</a></li>
+              <li><a href="#animals-section">Obsada</a></li>
             </ul>
+          </nav>
+        </header>
+
+        <div class="heading-section">
+          <h1>Natura w <br />zasięgu ręki</h1>
+          <hr />
+          <h4>
+            Krótki przewodnik po akwarystyce naturalnej dla początkujących
+          </h4>
+          <a class="start-btn" href="#how-to-start-section">Zaczynajmy</a>
+        </div>
+      </div>
+
+      <div id="history-section" class="fade-in">
+        <div class="section-logo">i</div>
+        <h2>Krótka historia akwarystyki naturalnej</h2>
+        <hr />
+        <p>
+          Za prekursora i twórcę akwarystyki naturalnej uważany jest japoński
+          projektant i fotograf <strong>Takashi Amano</strong>. Znacząco
+          przyczynił się do ukształtowania pojęcia akwarium naturalnego. Amano
+          wraz ze swoją firmą <strong>Aqua Design Amano</strong> (w skrócie ADA)
+          rozprowadzał własne produkty akwarystyczne, w tym specjalne akcesoria
+          do sadzenia roślin i formowania podwodnych krajobrazów Dzięki niemu
+          japońska sztuka ogrodnicza znalazła zastosowanie jako element
+          wzornictwa w aranżacji akwariów i sposobach sadzenia w nich roślin.
+        </p>
+
+        <img
+          src="/assets/img/photos/amano-1.jpg"
+          alt="Takashi Amano"
+          class="bordered-img gallery-item amano1 from-left slide-in"
+        />
+        <img
+          src="/assets/img/photos/amano-2.jpg"
+          alt="Dom Takashiego Amano"
+          class="bordered-img gallery-item amano2 from-right slide-in"
+        />
+      </div>
+
+      <div id="definition-section" class="fade-in">
+        <div class="section-logo">?</div>
+        <h2>Czym jest akwarystyka naturalna?</h2>
+        <hr />
+        <p>
+          Jest to rodzaj akwarystyki, który polega na odtworzeniu zaczerpniętych
+          z natury krajobrazów za pomocą naturalnych materiałów takich jak
+          korzenie oraz kamienie, które połączone z roślinami oraz tropikalnymi
+          rybami tworzą harmonię podwodnego świata. Dzięki tak stworzonej
+          aranżacji akwarium staje się relaksującym zakątkiem naszego
+          pomieszczenia.
+        </p>
+        <img
+          src="/assets/img/photos/history_section.jpg"
+          alt="Akwarium"
+          class="gallery-item"
+        />
+      </div>
+
+      <div id="how-to-start-section" class="fade-in">
+        <div class="section-logo">0</div>
+        <h2>Od czego zacząć?</h2>
+        <hr />
+        <p>
+          Jest wiele sposobów na stworzenie pięknego akwarium. Chcielibyśmy
+          zaproponować Wam wydeptaną przez nas ścieżkę, która doprowadzi was do
+          celu, jakim jest piękne akwarium w stylu naturalnym. Będzie to
+          pokazanie pewnego procesu, który pomoże Wam uniknąć różnych błędów,
+          zdobycie wiedzy i umiejętności pozwalających założyć i pielęgnować
+          własne akwarium naturalne. Założenie akwarium naturalnego wiąże się z
+          wieloma zagadnieniami <strong>takimi, jak:</strong>
+        </p>
+        <ul>
+          <li class="heading-item">
+            <a href="#tank-section">Wybór zbiornika</a>
+          </li>
+          <li class="heading-item"><a href="#light-section">Oświetlenie</a></li>
+          <li class="heading-item">
+            <a href="#filtration-section">Filtracja</a>
+          </li>
+          <li class="heading-item">
+            <a href="#fertilizing-section">Nawożenie</a>
+          </li>
+          <li class="heading-item">
+            <a href="#arrangement-section">Aranżacja</a>
+          </li>
+          <li class="heading-item"><a href="#animals-section">Obsada</a></li>
+        </ul>
+      </div>
+
+      <div id="tank-section" class="fade-in">
+        <div class="section-logo">1</div>
+        <h2>Jakie szkło wybrać do akwarium?</h2>
+        <hr />
+
+        <p>
+          Istnieją dwa podstawowe rodzaje szkła do akwarium:
+          <strong>Float</strong> oraz <strong>OptiWhite</strong>. Szkło
+          Optiwhite posiada mniejszą zawartość żelaza, dzięki czemu nie posiada
+          zielonkawego zabarwienia i ma większą przejrzystość. Pozwala to na
+          lepsze odzwierciedlenie kolorów ryb i roślin w akwarium.
+        </p>
+
+        <p>
+          Argumentem przemawiającym za typem Float jest cena, która jest niższa.
+          Kiedy kupujemy małe zbiorniki, różnice cen nie są mocno odczuwalne,
+          ale kiedy decydujemy się na coś większego, to dysproporcja między
+          Float a OptiWhite może okazać się decydująca na korzyść tego
+          pierwszego.
+        </p>
+
+        <img
+          src="/assets/img/photos/glass.png"
+          alt="Szkło"
+          class="bordered-img gallery-item glass"
+        />
+      </div>
+
+      <div id="light-section" class="fade-in">
+        <div class="section-logo">2</div>
+        <h2>Jakie oświetlenie wybrać do akwarium?</h2>
+        <hr />
+        <p>
+          Oświetlenie jest jednym z najważniejszych elementów budowy akwarium.
+          Dzięki dobremu oświetleniu, rośliny wodne mogą w sposób niezakłócony
+          przeprowadzać proces fotosyntezy, a zwierzęta wodne będą ładnie się
+          prezentować.
+        </p>
+        <br />
+        <p>
+          <strong>Słabo oświetlone</strong> zbiorniki są łatwiejsze w
+          utrzymaniu, nie wymagają dużego nakładu pracy aby utrzymać je wdobrej
+          formie.
+        </p>
+        <br />
+        <p>
+          <strong>Zastosowanie silnego</strong> daje możliwość uprawiania
+          wymagających roślin. Silne oświetlenie rodzi jednak konieczność
+          obfitego nawożenia, regularnych podmian wody, częstego przycinania
+          roślin oraz podawania do wody dwutlenku węgla w postaci gazowej.
+        </p>
+        <img
+          src="/assets/img/photos/light-section.jpg"
+          alt="Akwarium"
+          class="gallery-item"
+        />
+
+        <h3>
+          Dobierając oświetlenie w technologii LED do akwarium należy zwrócić
+          uwagę na:
+        </h3>
+        <br />
+        <h4>Moc wyrażaną w lumenach na litr wody (lm/l):</h4>
+        <ul>
+          <li class="heading-item">10 słabe światło</li>
+          <li>
+            <p>
+              umożliwiające uprawę wyłącznie cieniolubnych i mało wymagających
+              roślin. Widoczność w zbiorniku będzie dostateczna.
+            </p>
+          </li>
+          <li class="heading-item">20 dobre światło</li>
+          <li>
+            <p>
+              nie wymagające dozowania dwutlenku węgla i obfitego nawożenia
+              roślin. Pozwala uprawiać większość łatwych w uprawie roślin.
+              Widoczność w zbiorniku będzie dobra, ale jasność samego akwarium
+              będzie mało efektowna.
+            </p>
+          </li>
+          <li class="heading-item">30 bardzo dobre oświetlenie</li>
+          <li>
+            <p>
+              dedykowane głównie do regularnie nawożonych zbiorników roślinnych,
+              wyposażonych w instalację CO2 i żyzne podłoże. Pozwala na uprawę
+              wielu gatunków roślin, zarówno łatwych w uprawie jak i tych
+              wymagających. Widoczność w zbiorniku będzie bardzo dobra, a
+              jasność akwarium będzie przykuwała uwagę w ciemnych
+              pomieszczeniach.
+            </p>
+          </li>
+          <li class="heading-item">40 i więcej</li>
+          <li>
+            <p>
+              bardzo silne oświetlenie, na które decydują się profesjonaliści do
+              zbiorków roślinnych z instalacją CO2, regularnym nawożeniem i
+              żyznym podłożem. Ilość światła wystarczająca do uprawy wszystkich
+              światłolubnych roślin. Widoczność w zbiorniku będzie znakomita, a
+              akwarium będzie prezentowało się efektownie również w jasnych
+              pomieszczeniach.
+            </p>
+          </li>
+        </ul>
+
+        <h4>Temperaturę barwową wyrażaną w kelwinach (K):</h4>
+        <ul>
+          <li class="heading-item">6 500</li>
+          <li>
+            <p>
+              jasne światło o neutralnej barwie, zbliżone do światła
+              słonecznego, które bardzo dobrze oddaje kolory ryb i roślin.
+            </p>
+          </li>
+          <li class="heading-item">8 000</li>
+          <li>
+            <p>
+              jasne, zimne światło o purpurowym zabarwieniu wynikającym ze
+              zwiększonej ilości fal niebieskich i czerwonych (świetlówki
+              PLANT), które powodują lepszy wzrost roślin.
+            </p>
+          </li>
+          <li class="heading-item">10 000</li>
+          <li>
+            <p>
+              światło o błękitnej barwie, zwykle stosowane w połączeniu z 20 000
+              K w zbiornikach morskich gdzie zapewniają prawidłowy wzrost
+              koralowców.
+            </p>
+          </li>
+          <li class="heading-item">20 000</li>
+          <li>
+            <p>
+              światło o różowej barwie, zwykle stosowane w połączeniu z 10 000 K
+              w zbiornikach morskich gdzie zapewniają prawidłowy wzrost
+              koralowców.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="filtration-section" class="fade-in">
+        <div class="section-logo">3</div>
+        <h2>Filtracja w akwarium</h2>
+        <hr />
+        <p>
+          Słowo <strong>filtracja</strong> w akwarystyce jest niezaprzeczalnie
+          najważniejszym terminem jaki każdy akwarysta powinien opanować i
+          jednocześnie i niestety najbardziej zaniedbanym tematem przez
+          początkujących akwarystów i wielu sprzedawców w sklepach
+          akwarystycznych i zoologicznych.
+        </p>
+        <h4>
+          W akwarystyce możemy wyodrębnić 3 najważniejsze
+          <strong>rodzaje filtracji:</strong>
+        </h4>
+        <ul>
+          <li class="heading-item">Filtracja biologiczna</li>
+          <li class="heading-item">Filtracja mechaniczna</li>
+          <li class="heading-item">Filtracja chemiczna</li>
+        </ul>
+        <img
+          src="/assets/img/photos/filtration.png"
+          alt="Akwarium"
+          class="gallery-item"
+        />
+
+        <ul>
+          <li class="heading-item">Filtracja biologiczna</li>
+          <li>
+            <p>
+              Filtracja biologiczna to najważniejszy element filtracji bez
+              którego nie może istnieć akwarium! Filtracja biologiczna to
+              filtracja wody przez mikro organizmy i bakterie. Wśród tych
+              bakterii jest wiele szczepów i gatunków jak nitrosomonas sp.,
+              nitrobacter sp., nitrospira sp. itd ale nie jest to teraz istotne,
+              o szczepach bakteri będzie w kolejnym artykule. Ważne jest na tym
+              etapie uzmysłowienie sobie, że mikroorganizmy jak bakterie,
+              mikroskopijne, niewidzialne żyjątka bardzo skutecznie filtrują
+              wodę czyli oczyszczają ją ze szkodliwych związków i toksyn jak np
+              amoniak (NH3/NH4), czy azotyny (NO2), które są "usuwane" z wody
+              przez bakterie tlenowe (nitryfikacyjne.) Są również inne szczepy
+              bakterii tlenowych jak i bakterie beztlenowe i rożne ich szczepy
+              ale o tym również w innym artykule.
+            </p>
+          </li>
+          <li class="heading-item">Filtracja mechaniczna</li>
+          <li>
+            <p>
+              Filtracja mechaniczna to element filtracji akwarium który jest
+              dodatkiem dla filtracji biologicznej a nie wymogiem. Filtracja
+              mechaniczna to nic innego jak mechaniczne filtrowanie wody. W
+              akwarium odbywa się za pomocą wkładów do filtracji mechanicznej
+              jak rożnego rodzaju gąbki, waty, włókniny i inne media i wkłady do
+              tego celu. Filtracja mechaniczna polega na oczyszczaniu wody z
+              wizualnych zanieczyszczeń jak np szczątki pokarmu, roślin, i inne
+              cząsteczki organiczne unoszące się w wodzie, które widzimy gołym
+              okiem. Można by ją porównać do przelewania filiżanki kawy z fusami
+              przez gazę, kawa przeleci, fusy czyli nasze zanieczyszczenia
+              zostaną wy-filtrowane mechaniczne i osiądą na gazie.
+            </p>
+          </li>
+          <li class="heading-item">Filtracja chemiczna</li>
+          <li>
+            <p>
+              Filtracja chemiczna to element filtracji który może być stosowany
+              dodatkowo do filtracji biologicznej i mechanicznej w celu
+              realizowania wyśrubowanych zadań, nie jest wymogiem. Filtracja
+              chemiczna odbywa się poprzez specjalistyczne wkłady i media do
+              tego celu. Termin ten określa filtrowanie wody inne niż filtracja
+              biologiczna czy mechaniczna. Filtracja chemiczna może być
+              realizowana za pomocą szeregu produktów do tego celu np
+              specjalistycznych węgli, żywic, spieków z dodatkami i różnych
+              mieszanek. Efekty filtracji chemicznej mogą być bardzo szerokie
+              lub selektywne. Np możemy usunąć same azotany (No3) z wody, lub
+              usunąć metale ciężkie z wody, lub usunąć fosforany (Po4) z wody
+              lub usunąć zabarwienie wody itd itp.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="fertilizing-section" class="fade-in">
+        <div class="section-logo">4</div>
+        <h2>Nawożenie w akwarium</h2>
+        <hr />
+        <p>
+          Temat nawożenia akwarium jest jednym z częściej poruszanych przez
+          osoby, które marzą o pięknym akwarium. Metod skutecznego nawożenia
+          jest kilka, dlatego zanim przystąpimy do tej czynności, warto zacząć
+          od uzyskania podstawowych informacji. Przede wszystkim musimy mieć
+          świadomość tego, że każde akwarium jest inne, dlatego też metoda
+          nawożenia może nieznacznie różnić się w zależności od przypadku.
+        </p>
+        <img
+          src="/assets/img/photos/fertilization-section.jpg.png"
+          alt="Akwarium"
+          class="gallery-item"
+        />
+
+        <ul>
+          <li class="heading-item">Istotne jest podłoże</li>
+          <li>
+            <p>
+              Bardzo istotną kwestią w procesie nawożenia jest wybór
+              odpowiedniego podłoża, które będzie jednocześnie dopasowane do
+              rodzaju zakładanego akwarium. Na rynku, dostępnych jest kilka
+              rodzajów, niemniej jednak każdy z nich jest po to, aby wspomóc
+              rośliny w ich odpowiednim wzroście i prawidłowym rozwoju.
+              Większość specjalistycznych podłoży do akwarium, bogatych jest w
+              składniki makro i mikroelementy, które pomagają roślinom podczas
+              zakorzeniania oraz dostarczają im odpowiednich składników w
+              pierwszej fazie wzrostu. Na przykład w przypadku akwarium
+              roślinnego, najlepszym podłożem jest podłoże aktywne - organiczne.
+            </p>
+          </li>
+          <li class="heading-item">Zadbaj o stabilność</li>
+          <li>
+            <p>
+              Najlepsza dla odpowiedniego wzrostu roślin jest stabilność.
+              Oczywiście, większość z nas cieszy się z każdego, nowo powstałego
+              pędu w akwarium, niemniej jednak warto mieć się na baczności.
+              Szybki wzrost nie jest tak dobry, jak mogłoby się wydawać na
+              pierwszy rzut oka. Te najszybciej rosnące rośliny powinniśmy
+              systematycznie przycinać, ewentualnie zmienić na takie, które
+              rosną wolniej. Najważniejsze w uzyskaniu stabilności w zbiorniku
+              jest stopniowe wprowadzanie ewentualnych zmian, nigdy nie robimy
+              tego w drastyczny sposób np: zmieniając nawożenie róbmy delikatną
+              korektę co tydzień a nie wlewajmy na raz całej butelki nawozu.
+              Warto również pamiętać że im więcej roślin w akwarium roślinnym
+              tym bardziej stabilniejszy będzie ekosystem akwarium.
+            </p>
+          </li>
+          <li class="heading-item">Czas na nawożenie</li>
+          <li>
+            <p>
+              PMDD i EI, to metody nawożenia roślin, które pozwalają na
+              uzyskanie zdrowych roślin oraz stabilności akwarium. Metoda PMDD,
+              polega na nawożeniu akwarium w odpowiednie składniki odżywcze, ze
+              szczególnym ograniczeniem fosforanów, w skrócie dostarczamy
+              wszystkie składniki oprócz fosforanów (PO4). Metodę PMDD polecamy
+              do akwariów bez CO2. Drugą z metod jest EI, czyli Estimative
+              Index, która obejmuje dozowanie składników odżywczych, także
+              fosforanów, bez konieczności ich kontrolowania, w skrócie
+              dostarczamy do akwarium wszystkie składniki w nadmiarze. W
+              metodzie Estimative Index najważniejszym czynnikiem gwarantującym
+              sukces jest stały i wysoki poziom rozpuszczonego Co2 w wodzie,
+              oraz regularne cotygodniowe duże (50%) podmiany wody. Takie
+              postępowanie pozwala uniknąć przedawkowania nawozów.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="arrangement-section" class="fade-in">
+        <div class="section-logo">5</div>
+        <h2>Aranżacja zbiornika</h2>
+        <hr />
+        <p>
+          Niewątpliwie twórcą akwarystyki naturalnej jest Takashi Amano, którego
+          pracami zachwycamy się już od ponad 30 lat. Jako profesjonalny
+          fotograf, doskonale potrafił przenieść podpatrzone w naturze
+          krajobrazy do akwarium, łącząc korzenie i skały z roślinami w
+          niepowtarzalny sposób – zapierający dech w piersiach niejednego
+          akwarysty. W ciągu jego wieloletniej pracy na rzecz rozwijania
+          akwarystyki naturalnej wykreował cztery podstawowe style aranżacji.
+        </p>
+        <blockquote>
+          "Anything blocking the aquascape is unnecessary." - Takashi Amano
+        </blockquote>
+
+        <ul>
+          <li class="heading-item">Iwagumi</li>
+          <li>
+            <p>
+              Najstarszy styl, którego źródło można odnaleźć w sztuce tworzenia
+              japońskich ogrodów. Odpowiednio ustawione skały są jedyną formą
+              dekoracji. Wbrew pozorom, ułożenie skał, dobór ich wielkości,
+              koloru oraz faktury, nie jest takie proste i oczywiste. Zazwyczaj
+              środek ciężkości aranżacji przesuwa się w jedną ze stron.
+            </p>
+            <p>
+              Przy tworzeniu tego typu aranżacji warto kierować się zasadą
+              złotego podziału, która mówi o tym, że element przyciągający wzrok
+              powinien znajdować się w miejscu, gdzie stosunek odległości od
+              boków akwarium powinien mieć proporcje około 1:1,6. Spotyka się
+              również doskonałe aranżacje, gdzie kluczowy element jest
+              umieszczony centralnie.
+            </p>
+            <p>
+              Duże znaczenie ma odpowiednie ułożenie podłoża, w tym zachowanie
+              właściwego nachylenia, co pozwala uzyskać lepszą perspektywę, a co
+              za tym idzie sam odbiór kompozycji przez oglądających. Do
+              obsadzenia zbiornika, w szczególności na pierwszym i drugim planie
+              używa się roślin, które po rozrośnięciu się tworzą „trawniki”.
+            </p>
+            <img
+              src="/assets/img/photos/iwagumi.jpg"
+              alt="Akwarium Iwagumi"
+              class="gallery-item"
+            />
+          </li>
+          <li class="heading-item">Ryuboku</li>
+          <li>
+            <p>
+              Styl w którym swobodnie można łączyć drewno i skały, gdzie twórca
+              jest ograniczony wymiarami akwarium i własną fantazją. Ta
+              dowolność kompozycji sprawia, że jest to najczęściej spotykany
+              rodzaj aranżacji w akwarystyce roślinnej.
+            </p>
+            <p>
+              Odtworzenie dzikich lasów deszczowych, gdzie często korzenie
+              przeplatają się wzajemnie, umiejętnie wkomponowane skały,
+              dekoracje porośnięte mchami sprawiają, że aranżacje tego typu są
+              często bardzo skomplikowane, gdzie przykłada się dużo uwagi na
+              detale. W akwariach typu ryuboku, przy odpowiedniej kompozycji,
+              można zastosować każdy rodzaj roślin, każdego planu: od roślin
+              trawnikowych po rośliny wysokie na trzecim planie, a także epifity
+              porastające korzenie i kamienie.
+            </p>
+            <img
+              src="/assets/img/photos/ryuboku.jpg"
+              alt="Akwarium Ryuboku"
+              class="gallery-item"
+            />
+          </li>
+          <li class="heading-item">Mizube</li>
+          <li>
+            <p>
+              Mizube to rozwinięcie stylu ryuboku. W tym jednak przypadku
+              dekoracje wychodzą poza obrys akwarium. Korzenie i skały wystające
+              ponad lustro wody sprawiają, że w ciekawy sposób można pokazać
+              przekrój strumienia lub tropikalnej rzeki.
+            </p>
+            <p>
+              Dodatkowe możliwości daje zastosowanie roślin, które mogą
+              przerastać i wyrastać ponad lustro wody. Charakter tych aranżacji
+              sprawia, że mogą być tworzone tylko w akwariach otwartych ,
+              najlepiej z podwieszonym nad nimi oświetleniem. Dzięki temu
+              wyrastające rośliny i wystające dekoracje dodają aranżacji
+              dodatkowego uroku.
+            </p>
+            <img
+              src="/assets/img/photos/mizube.png"
+              alt="Akwarium Mizube"
+              class="gallery-item"
+            />
+          </li>
+          <li class="heading-item">Ragwork</li>
+          <li>
+            <p>
+              Najmłodszy z przedstawionych stylów, którego historia ma niespełna
+              kilka lat. Ragwork bazuje na koncepcji iwagumi. W tym stylu,
+              dzięki użyciu dużej ilości skał, odtwarzane są strome górskie
+              zbocza. Nie stosuje się tu żadnych konkretnych zasad, lecz należy
+              starać się uzyskać, jak najlepsze naśladowanie natury.
+            </p>
+            <p>
+              Spotykane w akwariach górskie łańcuchy nie są jednak proste do
+              ułożenia. Nie są również łatwe do obsadzenia roślinnością. Należy
+              pamiętać, aby nie stosowa zbyt wysokich roślin, żeby nie zatracić
+              wrażenia górskich łąk.
+            </p>
+
+            <img
+              src="/assets/img/photos/ragwork.jpg"
+              alt="Akwarium Ragwork"
+              class="gallery-item"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div id="animals-section" class="fade-in">
+        <div class="section-logo">6</div>
+        <h2>Obsada akwarium</h2>
+        <hr />
+        <p>
+          W aquascapingu powinieneś zawsze skupiać się na roślinach wodnych, a
+          nie na rybach. A na początku zakładania nowego akwarium zawsze lepiej
+          jest mieć więcej roślin niż ryb, zwłaszcza długie rośliny łodygowe,
+          które mają większe tempo wzrostu, co pomoże w wchłanianiu dodatkowych
+          składników odżywczych z wody.
+        </p>
+        <p>
+          Jeśli chodzi o ryby tropikalne, z pewnością już wiesz, które gatunki
+          są bardziej odpowiednie dla twoich przyszłych krajobrazów wodnych.
+          Duże pielęgnice amerykańskie lub afrykańskie będą zakłócać twój
+          krajobraz, a nawet zjedzą rośliny wodne, gdy tylko wprowadzisz je do
+          akwarium z roślinami.
+        </p>
+        <p>
+          Wybierz małe ryby, takie jak: Bystrzyk Amandy, Danio pręgowany lub
+          Neon Inessa. To bardzo małe ryby tropikalne, które w większych grupach
+          ładnie podkreślą całą aranżację. Oprócz ryb w akwarystyce często
+          wykorzystuje się mały gatunek krewetek ozdobnych Neocaridina oraz
+          ozdobne gatunki ślimaków wodnych.
+        </p>
+        <br />
+        <h3>Najpopularniejsze ryby używane w akwarystyce naturalnej</h3>
+        <br />
+        <div class="animals-gallery">
+          <div class="animal-info info1 from-left slide-in">
+            <h5>Niebiański Danio Perłowy</h5>
+            <i>(Danio margaritatus)</i>
+            <p>
+              gatunek słodkowodnej ryby z rodziny karpiowatych. Bywa hodowana w
+              akwarium. W handlu znana pod nazwą Microrasbora sp. Galaxy lub
+              rasbora galaxy.
+            </p>
+          </div>
+          <img
+            src="/assets/img/photos/danio-margaritatus.jpg"
+            alt="Niebiański Danio Perłowy"
+            class="bordered-img gallery-item grid1 from-right slide-in"
+          />
+
+          <div class="animal-info info2 from-right slide-in">
+            <h5>Bystrzyk Amandy</h5>
+            <i>(Hyphessobrycon amandae)</i>
+            <p>
+              ryba słodkowodna z rodziny characin zamów Characiformes. Gatunek
+              został odkryty w 1987 roku i nazwany na cześć matki odkrywcy ryb,
+              Heiko Bleher. Gatunek ten rośnie do maksymalnej całkowitej
+              długości około 2 cm .
+            </p>
+          </div>
+
+          <img
+            src="/assets/img/photos/ember-tetra.jpg"
+            alt="Bystrzyk Amandy"
+            class="bordered-img gallery-item grid2 from-left slide-in"
+          />
+
+          <div class="animal-info info3 from-left slide-in">
+            <h5>Razbora borneańska</h5>
+            <i>(Boraras Brigittae)</i>
+            <p>
+              Jeden z najmniejszych przedstawicieli ryb karpiowatych na świecie.
+              Rybta ta pochodzi z Azji i osiąga zaledwie do 2cm długości.
+            </p>
+          </div>
+
+          <img
+            src="/assets/img/photos/rasbora.jpg"
+            alt="Razbora borneańska"
+            class="bordered-img gallery-item grid3 from-right slide-in"
+          />
+
+          <div class="animal-info info4 from-right slide-in">
+            <h5>Neon Innesa</h5>
+            <i>(Paracheirodon innesi)</i>
+            <p>
+              Jedna z najbardziej popularnych ryb akwariowych, dostępna
+              praktycznie w każdym sklepie akwarystycznym. Swoją popularność
+              zyskała dzięki efektownemu ubarwieniu, wytrzymałości oraz niskiej
+              cenie.
+            </p>
+          </div>
+
+          <img
+            src="/assets/img/photos/neon-innesa.jpg"
+            alt="Neon Innesa"
+            class="bordered-img gallery-item grid4 from-left slide-in"
+          />
+
+          <div class="animal-info info5 from-left slide-in">
+            <h5>Zwinnik czerwonousty</h5>
+            <i>(Rodostomus)</i>
+            <p>
+              gatunek słodkowodnej ryby z rodziny kąsaczowatych. Występowanie
+              Dolny bieg Amazonki i przyległe do niej obszary. Wielkość Do 7 cm,
+              w akwariach nie przekracza 5,5 cm.
+            </p>
+          </div>
+
+          <img
+            src="/assets/img/photos/hemigrammus-bleheri.jpg"
+            alt="Zwinnik czerwonousty"
+            class="bordered-img gallery-item grid5 from-right slide-in"
+          />
         </div>
 
-        <div id="tank-section">
-            <div class="section-logo">1</div>
-            <h2>Jakie szkło wybrać do akwarium?</h2>
-            <hr>
+        <h3>Inne zwierzęta używane w akwarystyce naturalnej</h3>
 
+        <div class="animals-gallery animals-gallery2">
+          <div class="animal-info info6 from-right slide-in">
+            <h5>Krewetka słodkowodna</h5>
+            <i>(Neocaridina)</i>
             <p>
-                Istnieją dwa podstawowe rodzaje szkła do akwarium: <strong>Float</strong> oraz <strong>OptiWhite</strong>. 
-                Szkło Optiwhite posiada mniejszą zawartość żelaza, dzięki czemu nie posiada zielonkawego 
-                zabarwienia i ma większą przejrzystość. Pozwala to na lepsze odzwierciedlenie kolorów ryb i roślin w 
-                akwarium. 
+              rodzaj słodkowodnych krewetek z rodziny Atyidae, zamieszkujące w
+              naturze wody Chin, Japonii, Korei, Wietnamu i Tajwanu. Rodzaj ten
+              ma duże znaczenie w akwarystyce. Aktualnie do Neocaridina zalicza
+              się 20 gatunków.
             </p>
+          </div>
 
+          <img
+            src="/assets/img/photos/shrimp.jpg"
+            alt="Krewetka słodkowodna"
+            class="bordered-img gallery-item grid6 from-left slide-in"
+          />
+
+          <div class="animal-info info7 from-left slide-in">
+            <h5>Ślimak słodkowodny</h5>
+            <i>(Pomacea bridgesii)</i>
             <p>
-                Argumentem przemawiającym za typem Float jest cena, która jest niższa. Kiedy kupujemy małe 
-                zbiorniki, różnice cen nie są mocno odczuwalne, ale kiedy decydujemy się na coś większego, to 
-                dysproporcja między Float a OptiWhite może okazać się decydująca na korzyść tego pierwszego.
+              gatunek ślimaka przodoskrzelnego z rodziny Ampullariidae opisany
+              naukowo przez L. A. Reeve w Conchologia iconica pod nazwą
+              Ampullaria bridgesii na podstawie osobników znalezionych w
+              Boliwii.
             </p>
+          </div>
 
-            <img src="/assets/img/photos/glass.png" alt="Szkło" class="bordered-img gallery-item glass">
+          <img
+            src="/assets/img/photos/snail.jpg"
+            alt="Ślimak słodkowodny"
+            class="bordered-img gallery-item grid7 from-right slide-in"
+          />
         </div>
+      </div>
 
-        <div id="light-section">
-            <div class="section-logo">2</div>
-            <h2>Jakie szkło wybrać do akwarium?</h2>
-            <hr>
-            <p>
-                Oświetlenie jest jednym z najważniejszych elementów budowy akwarium. Dzięki dobremu 
-                oświetleniu, rośliny wodne mogą w sposób niezakłócony przeprowadzać proces fotosyntezy, a 
-                zwierzęta wodne będą ładnie się prezentować. 
-            </p>
-            <br>
-            <p>
-                <strong>Słabo oświetlone</strong> zbiorniki są łatwiejsze w utrzymaniu, nie wymagają dużego nakładu pracy aby 
-                utrzymać je wdobrej formie.
-            </p>
-            <br>
-            <p>
-                <strong>Zastosowanie silnego</strong> daje możliwość uprawiania wymagających roślin. Silne oświetlenie rodzi 
-                jednak konieczność obfitego nawożenia, regularnych podmian wody, częstego przycinania roślin 
-                oraz podawania do wody dwutlenku węgla w postaci gazowej. 
-            </p>
-            <img src="/assets/img/photos/light-section.jpg" alt="Akwarium" class="gallery-item">
+      <hr />
 
-            <h3>Dobierając oświetlenie w technologii LED do akwarium należy zwrócić uwagę na:</h3>
-            <br>
-            <h4>Moc wyrażaną w lumenach na litr wody (lm/l):</h4>
-            <ul>
-                <li class="heading-item">10 słabe światło</li>
-                <li>
-                    <p>
-                        umożliwiające uprawę wyłącznie cieniolubnych i mało wymagających roślin. Widoczność w zbiorniku będzie dostateczna.
-                    </p>
-                </li>
-                <li class="heading-item">20 dobre światło</li>
-                <li>
-                    <p>
-                        nie wymagające dozowania dwutlenku węgla i obfitego nawożenia roślin. Pozwala uprawiać większość łatwych w uprawie roślin. Widoczność w zbiorniku będzie dobra, ale jasność samego akwarium będzie mało efektowna.
-                    </p>
-                </li>
-                <li class="heading-item">30 bardzo dobre oświetlenie</li>
-                <li>
-                    <p>
-                        dedykowane głównie do regularnie nawożonych zbiorników roślinnych, wyposażonych w instalację CO2 i żyzne podłoże. Pozwala na uprawę wielu gatunków roślin, zarówno łatwych w uprawie jak i tych wymagających. Widoczność w zbiorniku będzie bardzo dobra, a jasność akwarium będzie przykuwała uwagę w ciemnych pomieszczeniach.
-                    </p>
-                </li>
-                <li class="heading-item">40 i więcej</li>
-                <li>
-                    <p>
-                        bardzo silne oświetlenie, na które decydują się profesjonaliści do zbiorków roślinnych z instalacją CO2, regularnym nawożeniem i żyznym podłożem. Ilość światła wystarczająca do uprawy wszystkich światłolubnych roślin. Widoczność w zbiorniku będzie znakomita, a akwarium będzie prezentowało się efektownie również w jasnych pomieszczeniach. 
-                    </p>
-                </li>
-            </ul>
+      <a href="#" class="go-up-btn"
+        ><img src="/assets/img/icons/go-up.svg" alt=""
+      /></a>
 
-            <h4>Temperaturę barwową wyrażaną w kelwinach (K):</h4>
-            <ul>
-                <li class="heading-item">6 500</li>
-                <li>
-                    <p>
-                        jasne światło o neutralnej barwie, zbliżone do światła słonecznego, które bardzo dobrze oddaje kolory ryb i roślin.
-                    </p>
-                </li>
-                <li class="heading-item">8 000</li>
-                <li>
-                    <p>
-                        jasne, zimne światło o purpurowym zabarwieniu wynikającym ze zwiększonej ilości fal niebieskich i czerwonych (świetlówki PLANT), które powodują lepszy wzrost roślin.
-                    </p>
-                </li>
-                <li class="heading-item">10 000</li>
-                <li>
-                    <p>
-                        światło o błękitnej barwie, zwykle stosowane w połączeniu z 20 000 K w zbiornikach morskich gdzie zapewniają prawidłowy wzrost koralowców.
-                    </p>
-                </li>
-                <li class="heading-item">20 000</li>
-                <li>
-                    <p>
-                        światło o różowej barwie, zwykle stosowane w połączeniu z 10 000 K w zbiornikach morskich gdzie zapewniają prawidłowy wzrost koralowców.
-                    </p>
-                </li>
-            </ul>
+      <footer class="fade-in">
+        <div class="contact-section">
+          <h5>Media społecznościowe:</h5>
+          <img
+            src="/assets/img/icons/facebook-icon.svg"
+            alt="Facebook"
+            class="icon"
+          />
+          <img
+            src="/assets/img/icons/instagram-icon.svg"
+            alt="Instagram"
+            class="icon"
+          />
+          <img
+            src="/assets/img/icons/twitter-icon.svg"
+            alt="Twitter"
+            class="icon"
+          />
+
+          <h5>Adres:</h5>
+          304/23 Jana Zamoyskiego, Kraków
+          <h5>Telefon:</h5>
+          (+48) 434 234 657
+          <h5>E-mail:</h5>
+          <div>
+            obsluga.klienta@tankguide.com<br />
+            biznes@tankguide.com
+          </div>
+
+          <div class="logo-copyright-section">
+            <img
+              src="/assets/img/icons/footer-logo.svg"
+              alt="Tank Guide Logo"
+              class="footer-logo"
+            />
+            &copy; Copyright Fish Guide 2021
+          </div>
         </div>
-
-        <div id="filtration-section">
-            <div class="section-logo">3</div>
-            <h2>Filtracja w akwarium</h2>
-            <hr>
-            <p>
-                Słowo <strong>filtracja</strong> w akwarystyce jest niezaprzeczalnie najważniejszym terminem jaki każdy akwarysta powinien opanować i jednocześnie i niestety najbardziej zaniedbanym tematem przez początkujących akwarystów i wielu sprzedawców w sklepach akwarystycznych i zoologicznych.
-            </p>
-            <h4>W akwarystyce możemy wyodrębnić 3 najważniejsze <strong>rodzaje filtracji:</strong></h4>
-            <ul>
-                <li class="heading-item">Filtracja biologiczna</li>
-                <li class="heading-item">Filtracja mechaniczna</li>
-                <li class="heading-item">Filtracja chemiczna</li>
-            </ul>
-            <img src="/assets/img/photos/filtration.png" alt="Akwarium" class="gallery-item">
-
-            <ul>
-                <li class="heading-item">Filtracja biologiczna</li>
-                <li>
-                    <p>
-                        Filtracja biologiczna to najważniejszy element filtracji bez którego nie może istnieć akwarium! Filtracja biologiczna to filtracja wody przez mikro organizmy i bakterie. Wśród tych bakterii jest wiele szczepów i gatunków jak nitrosomonas sp., nitrobacter sp., nitrospira sp. itd ale nie jest to teraz istotne, o szczepach bakteri będzie w kolejnym artykule. Ważne jest na tym etapie uzmysłowienie sobie, że mikroorganizmy jak bakterie, mikroskopijne, niewidzialne żyjątka bardzo skutecznie filtrują wodę czyli oczyszczają ją ze szkodliwych związków i toksyn jak np amoniak (NH3/NH4), czy azotyny (NO2), które są "usuwane" z wody przez bakterie tlenowe (nitryfikacyjne.) Są również inne szczepy bakterii tlenowych jak i bakterie beztlenowe i rożne ich szczepy ale o tym również w innym artykule.
-                    </p>
-                </li>
-                <li class="heading-item">Filtracja mechaniczna</li>
-                <li>
-                    <p>
-                        Filtracja mechaniczna to element filtracji akwarium który jest dodatkiem dla filtracji biologicznej a nie wymogiem. Filtracja mechaniczna to nic innego jak mechaniczne filtrowanie wody. W akwarium odbywa się za pomocą wkładów do filtracji mechanicznej jak rożnego rodzaju gąbki, waty, włókniny i inne media i wkłady do tego celu. Filtracja mechaniczna polega na oczyszczaniu wody z wizualnych zanieczyszczeń jak np szczątki pokarmu, roślin, i inne cząsteczki organiczne unoszące się w wodzie, które widzimy gołym okiem. Można by ją porównać do przelewania filiżanki kawy z fusami przez gazę, kawa przeleci, fusy czyli nasze zanieczyszczenia zostaną wy-filtrowane mechaniczne i osiądą na gazie.
-                    </p>
-                </li>
-                <li class="heading-item">Filtracja chemiczna</li>
-                <li>
-                    <p>
-                        Filtracja chemiczna to element filtracji który może być stosowany dodatkowo do filtracji biologicznej i mechanicznej w celu realizowania wyśrubowanych zadań, nie jest wymogiem. Filtracja chemiczna odbywa się poprzez specjalistyczne wkłady i media do tego celu. Termin ten określa filtrowanie wody inne niż filtracja biologiczna czy mechaniczna. Filtracja chemiczna może być realizowana za pomocą szeregu produktów do tego celu np specjalistycznych węgli, żywic, spieków z dodatkami i różnych mieszanek. Efekty filtracji chemicznej mogą być bardzo szerokie lub selektywne. Np możemy usunąć same azotany (No3) z wody, lub usunąć metale ciężkie z wody, lub usunąć fosforany (Po4) z wody lub usunąć zabarwienie wody itd itp.
-                    </p>
-                </li>
-            </ul>
+        <div class="map-section">
+          <h5>Znajdź nas na mapie:</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.321380879272!2d19.935162715717375!3d50.061542629423606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b120455da67%3A0xc3c7f5071b750d33!2zUnluZWsgR8WCw7N3bnk!5e0!3m2!1spl!2spl!4v1622888797971!5m2!1spl!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="bordered-img"
+          ></iframe>
         </div>
-
-        <div id="fertilizing-section">
-            <div class="section-logo">4</div>
-            <h2>Nawożenie w akwarium</h2>
-            <hr>
-            <p>
-                Temat nawożenia akwarium jest jednym z częściej poruszanych przez osoby, które marzą o pięknym akwarium. Metod skutecznego nawożenia jest kilka, dlatego zanim przystąpimy do tej czynności, warto zacząć od uzyskania podstawowych informacji. Przede wszystkim musimy mieć świadomość tego, że każde akwarium jest inne, dlatego też metoda nawożenia może nieznacznie różnić się w zależności od przypadku.
-            </p>
-            <img src="/assets/img/photos/fertilization-section.jpg" alt="Akwarium" class="gallery-item">
-            <img src="/assets/img/photos/fertilizers.png" alt="Nawozy" class="fertilizers">
-
-            <ul>
-                <li class="heading-item">Istotne jest podłoże</li>
-                <li>
-                    <p>
-                        Bardzo istotną kwestią w procesie nawożenia jest wybór odpowiedniego podłoża, które będzie jednocześnie dopasowane do rodzaju zakładanego akwarium.  Na rynku, dostępnych jest kilka rodzajów, niemniej jednak każdy z nich jest po to, aby wspomóc rośliny w ich odpowiednim wzroście i prawidłowym rozwoju. Większość specjalistycznych podłoży do akwarium, bogatych jest w składniki makro i mikroelementy, które pomagają roślinom podczas zakorzeniania oraz dostarczają im odpowiednich składników w pierwszej fazie wzrostu. Na przykład w przypadku akwarium roślinnego, najlepszym podłożem jest podłoże aktywne - organiczne.
-                    </p>
-                </li>
-                <li class="heading-item">Zadbaj o stabilność</li>
-                <li>
-                    <p>
-                        Najlepsza dla odpowiedniego wzrostu roślin jest stabilność. Oczywiście, większość z nas cieszy się z każdego, nowo powstałego pędu w akwarium, niemniej jednak warto mieć się na baczności. Szybki wzrost nie jest tak dobry, jak mogłoby się wydawać na pierwszy rzut oka. Te najszybciej rosnące rośliny powinniśmy systematycznie przycinać, ewentualnie zmienić na takie, które rosną wolniej. Najważniejsze w uzyskaniu stabilności w zbiorniku jest stopniowe wprowadzanie ewentualnych zmian, nigdy nie robimy tego w drastyczny sposób np: zmieniając nawożenie róbmy delikatną korektę co tydzień a nie wlewajmy na raz całej butelki nawozu.  Warto również pamiętać że im więcej roślin w akwarium roślinnym tym bardziej stabilniejszy będzie ekosystem akwarium.
-                    </p>
-                </li>
-                <li class="heading-item">Czas na nawożenie</li>
-                <li>
-                    <p>
-                        PMDD i EI, to metody nawożenia roślin, które pozwalają na uzyskanie zdrowych roślin oraz stabilności akwarium. Metoda PMDD, polega na nawożeniu akwarium w odpowiednie składniki odżywcze, ze szczególnym ograniczeniem fosforanów, w skrócie dostarczamy wszystkie składniki oprócz fosforanów (PO4). Metodę PMDD polecamy do akwariów bez CO2. Drugą z metod jest EI, czyli Estimative Index, która obejmuje dozowanie składników odżywczych, także fosforanów, bez konieczności ich kontrolowania, w skrócie dostarczamy do akwarium wszystkie składniki w nadmiarze. W metodzie Estimative Index najważniejszym czynnikiem gwarantującym sukces jest stały i wysoki poziom rozpuszczonego Co2 w wodzie, oraz regularne cotygodniowe duże (50%) podmiany wody. Takie postępowanie pozwala uniknąć przedawkowania nawozów.
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div id="arrangement-section">
-            <div class="section-logo">5</div>
-            <h2>Aranżacja zbiornika</h2>
-            <hr>
-            <p>
-                Niewątpliwie twórcą akwarystyki naturalnej jest Takashi Amano, którego pracami zachwycamy się już od ponad 30 lat. Jako profesjonalny fotograf, doskonale potrafił przenieść podpatrzone w naturze krajobrazy do akwarium, łącząc korzenie i skały z roślinami w niepowtarzalny sposób – zapierający dech w piersiach niejednego akwarysty. W ciągu jego wieloletniej pracy na rzecz rozwijania akwarystyki naturalnej wykreował cztery podstawowe style aranżacji.
-            </p>
-            <blockquote>
-                "Anything blocking the aquascape is unnecessary." - Takashi Amano
-            </blockquote>
-
-            <ul>
-                <li class="heading-item">Iwagumi</li>
-                <li>
-                    <p>
-                        Najstarszy styl, którego źródło można odnaleźć w sztuce tworzenia japońskich ogrodów. Odpowiednio ustawione skały są jedyną formą dekoracji. Wbrew pozorom, ułożenie skał, dobór ich wielkości, koloru oraz faktury, nie jest takie proste i oczywiste. Zazwyczaj środek ciężkości aranżacji przesuwa się w jedną ze stron. 
-                    </p>
-                    <p>
-                        Przy tworzeniu tego typu aranżacji warto kierować się zasadą złotego podziału, która mówi o tym, że element przyciągający wzrok powinien znajdować się w miejscu, gdzie stosunek odległości od boków akwarium powinien mieć proporcje około 1:1,6. Spotyka się również doskonałe aranżacje, gdzie kluczowy element jest umieszczony centralnie. 
-                    </p>
-                    <p>
-                        Duże znaczenie ma odpowiednie ułożenie podłoża, w tym zachowanie właściwego nachylenia, co pozwala uzyskać lepszą perspektywę, a co za tym idzie sam odbiór kompozycji przez oglądających. Do obsadzenia zbiornika, w szczególności na pierwszym i drugim planie używa się roślin, które po rozrośnięciu się tworzą „trawniki”.
-                    </p>
-                    <img src="/assets/img/photos/iwagumi.jpg" alt="Akwarium Iwagumi" class="gallery-item">
-                </li>
-                <li class="heading-item">Ryuboku</li>
-                <li>
-                    <p>
-                        Styl w którym swobodnie można łączyć drewno i skały, gdzie twórca jest ograniczony wymiarami akwarium i własną fantazją. Ta dowolność kompozycji sprawia, że jest to najczęściej spotykany rodzaj aranżacji w akwarystyce roślinnej. 
-                    </p>
-                    <p>
-                        Odtworzenie dzikich lasów deszczowych, gdzie często korzenie przeplatają się wzajemnie, umiejętnie wkomponowane skały, dekoracje porośnięte mchami sprawiają, że aranżacje tego typu są często bardzo skomplikowane, gdzie przykłada się dużo uwagi na detale. W akwariach typu ryuboku, przy odpowiedniej kompozycji, można zastosować każdy rodzaj roślin, każdego planu: od roślin trawnikowych po rośliny wysokie na trzecim planie, a także epifity porastające korzenie i kamienie.
-                    </p>
-                    <img src="/assets/img/photos/ryuboku.jpg" alt="Akwarium Ryuboku" class="gallery-item">
-                </li>
-                <li class="heading-item">Mizube</li>
-                <li>
-                    <p>
-                        Mizube to rozwinięcie stylu ryuboku. W tym jednak przypadku dekoracje wychodzą poza obrys akwarium. Korzenie i skały wystające ponad lustro wody sprawiają, że w ciekawy sposób można pokazać przekrój strumienia lub tropikalnej rzeki. 
-                    </p>
-                    <p>
-                        Dodatkowe możliwości daje zastosowanie roślin, które mogą przerastać i wyrastać ponad lustro wody. Charakter tych aranżacji sprawia, że mogą być tworzone tylko w akwariach otwartych , najlepiej z podwieszonym nad nimi oświetleniem. Dzięki temu wyrastające rośliny i wystające dekoracje dodają aranżacji dodatkowego uroku.
-                    </p>
-                    <img src="/assets/img/photos/mizube.png" alt="Akwarium Mizube" class="gallery-item">
-                </li>
-                <li class="heading-item">Ragwork</li>
-                <li>
-                    <p>
-                        Najmłodszy z przedstawionych stylów, którego historia ma niespełna kilka lat. Ragwork bazuje na koncepcji iwagumi. W tym stylu, dzięki użyciu dużej ilości skał, odtwarzane są strome górskie zbocza. Nie stosuje się tu żadnych konkretnych zasad, lecz należy starać się uzyskać, jak najlepsze naśladowanie natury. 
-                    </p>
-                    <p>
-                        Spotykane w akwariach górskie łańcuchy nie są jednak proste do ułożenia. Nie są również łatwe do obsadzenia roślinnością. Należy pamiętać, aby nie stosowa zbyt wysokich roślin, żeby nie zatracić wrażenia górskich łąk.
-                    </p>
-
-                    <img src="/assets/img/photos/ragwork.jpg" alt="Akwarium Ragwork" class="gallery-item"> 
-                </li>
-            </ul>
-        </div>
-
-        <div id="animals-section">
-            <div class="section-logo">6</div>
-            <h2>Obsada akwarium</h2>
-            <hr>
-            <p>
-                W aquascapingu powinieneś zawsze skupiać się na roślinach wodnych, a nie na rybach.
-                A na początku zakładania nowego akwarium zawsze lepiej jest mieć więcej roślin niż ryb, zwłaszcza długie rośliny łodygowe, które mają większe tempo wzrostu, co pomoże w wchłanianiu dodatkowych składników odżywczych z wody.
-            </p>
-            <p>
-                Jeśli chodzi o ryby tropikalne, z pewnością już wiesz, które gatunki są bardziej odpowiednie dla twoich przyszłych krajobrazów wodnych. Duże pielęgnice amerykańskie lub afrykańskie będą zakłócać twój krajobraz, a nawet zjedzą rośliny wodne, gdy tylko wprowadzisz je do akwarium z roślinami.
-            </p>
-            <p>
-                Wybierz małe ryby, takie jak: Bystrzyk Amandy, Danio pręgowany lub Neon Inessa. To bardzo małe ryby tropikalne, które w większych grupach ładnie podkreślą całą aranżację.
-                Oprócz ryb w akwarystyce często wykorzystuje się mały gatunek krewetek 
-                ozdobnych Neocaridina oraz ozdobne gatunki ślimaków wodnych.
-            </p>
-            <br>
-            <h3>Najpopularniejsze ryby używane w akwarystyce naturalnej</h3>
-            <br>
-            <div class="animals-gallery">
-                <div class="animal-info">
-                    <h5>Niebiański Danio Perłowy</h5>
-                    <i>(Danio margaritatus)</i>
-                    <p>
-                        gatunek słodkowodnej ryby z rodziny karpiowatych. Bywa hodowana w akwarium. W handlu znana pod nazwą Microrasbora sp. Galaxy lub rasbora galaxy.
-                    </p>
-                </div>
-                <img src="/assets/img/photos/danio-margaritatus.jpg" alt="Niebiański Danio Perłowy" class="bordered-img gallery-item">
-                
-                <div class="animal-info">
-                    <h5>Bystrzyk Amandy</h5>
-                    <i>(Hyphessobrycon amandae)</i>
-                    <p>
-                        ryba słodkowodna z rodziny characin zamów Characiformes. Gatunek został odkryty w 1987 roku i nazwany na cześć matki odkrywcy ryb, Heiko Bleher. Gatunek ten rośnie do maksymalnej całkowitej długości około 2 cm .                    
-                    </p>
-                </div>
-
-                <img src="/assets/img/photos/ember-tetra.jpg" alt="Bystrzyk Amandy" class="bordered-img gallery-item">
-
-                <div class="animal-info">
-                    <h5>Razbora borneańska</h5>
-                    <i>(Boraras Brigittae)</i>
-                    <p>
-                        Jeden z najmniejszych przedstawicieli ryb karpiowatych na świecie. Rybta ta pochodzi z Azji i osiąga zaledwie do 2cm długości.
-                    </p>
-                </div>
-
-                <img src="/assets/img/photos/rasbora.jpg" alt="Razbora borneańska" class="bordered-img gallery-item">
-
-                <div class="animal-info">
-                    <h5>Neon Innesa</h5>
-                    <i>(Paracheirodon innesi)</i>
-                    <p>
-                        Jedna z najbardziej popularnych ryb akwariowych, dostępna praktycznie w każdym sklepie akwarystycznym. Swoją popularność zyskała dzięki efektownemu ubarwieniu, wytrzymałości oraz niskiej cenie.
-                    </p>
-                </div>
-
-                <img src="/assets/img/photos/neon-innesa.jpg" alt="Neon Innesa" class="bordered-img gallery-item">
-
-                <div class="animal-info">
-                    <h5>Zwinnik czerwonousty</h5>
-                    <i>(Rodostomus)</i>
-                    <p>
-                        gatunek słodkowodnej ryby z rodziny kąsaczowatych. Występowanie Dolny bieg Amazonki i przyległe do niej obszary. Wielkość Do 7 cm, w akwariach nie przekracza 5,5 cm.                     </p>
-                </div>
-              
-                <img src="/assets/img/photos/hemigrammus-bleheri.jpg" alt="Zwinnik czerwonousty" class="bordered-img gallery-item">
-
-            </div>
-
-            <h3>Najpopularniejsze ryby używane w akwarystyce naturalnej</h3>
-
-            <div class="animals-gallery">
-                <div class="animal-info">
-                    <h5>Krewetka słodkowodna</h5>
-                    <i>(Neocaridina)</i>
-                    <p>
-                        rodzaj słodkowodnych krewetek z rodziny Atyidae, zamieszkujące w naturze wody Chin, Japonii, Korei, Wietnamu i Tajwanu. Rodzaj ten ma duże znaczenie w akwarystyce. Aktualnie do Neocaridina zalicza się 20 gatunków.                     
-                    </p>
-                </div>
-
-                <img src="/assets/img/photos/shrimp.jpg" alt="Krewetka słodkowodna" class="bordered-img gallery-item">
-
-                <div class="animal-info">
-                    <h5>Ślimak słodkowodny</h5>
-                    <i>(Pomacea bridgesii)</i>
-                    <p>
-                        gatunek ślimaka przodoskrzelnego z rodziny Ampullariidae opisany naukowo przez L. A. Reeve w Conchologia iconica pod nazwą Ampullaria bridgesii na podstawie osobników znalezionych w Boliwii.                
-                    </p>
-                </div>
-
-                <img src="/assets/img/photos/snail.jpg" alt="Krewetka słodkowodna" class="bordered-img gallery-item">
-
-            </div>
-        </div>
-        
-        <hr>
-
-        <a href="#" class="go-up-btn"><img src="/assets/img/icons/go-up.svg" alt=""></a>
-
-        <footer>
-            <div class="contact-section">
-                <h5>Media społecznościowe:</h5>
-                <img src="/assets/img/icons/facebook-icon.svg" alt="Facebook" class="icon">
-                <img src="/assets/img/icons/instagram-icon.svg" alt="Instagram" class="icon">
-                <img src="/assets/img/icons/twitter-icon.svg" alt="Twitter" class="icon">
-
-                <h5>Adres:</h5>
-                304/23 Jana Zamoyskiego, Kraków
-                <h5>Telefon:</h5>
-                (+48) 434 234 657
-                <h5>E-mail:</h5>
-                <div>
-                    obsluga.klienta@tankguide.com<br>
-                    biznes@tankguide.com
-                </div>
-
-                <div class="logo-copyright-section">
-                    <img src="/assets/img/icons/footer-logo.svg" alt="Tank Guide Logo" class="footer-logo">
-                    &copy; Copyright Fish Guide 2021
-                </div>
-            </div>
-            <div class="map-section">
-                <h5>Znajdź nas na mapie:</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.321380879272!2d19.935162715717375!3d50.061542629423606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b120455da67%3A0xc3c7f5071b750d33!2zUnluZWsgR8WCw7N3bnk!5e0!3m2!1spl!2spl!4v1622888797971!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" class="bordered-img"></iframe>
-            </div>
-        </footer>
+      </footer>
     </main>
 
     <div class="gallery">
-        <div class="gallery-wrapper">
-            <div class="wrapper">
-                <div class="backwards"><</div>
-                <div class="forwards">></div>
-            </div>
-            <div class="hide-btn">x</div>
-            <img src="" alt="" class="gallery-img">
-                
+      <div class="gallery-wrapper">
+        <div class="wrapper">
+          <div class="backwards">&lsaquo;</div>
+          <div class="forwards">&rsaquo;</div>
         </div>
-
+        <div class="hide-btn">&times;</div>
+        <img src="" alt="" class="gallery-img" />
+      </div>
     </div>
     <script src="/assets/script.js"></script>
-</body>
+  </body>
 </html>
